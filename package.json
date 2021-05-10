@@ -22,10 +22,13 @@
     "build": "rollup -c",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "exit 0",
-    "gen:theme-typings": "npx @chakra-ui/cli tokens src/theming/theme.ts"
+    "gen:theme-typings": "npx @chakra-ui/cli tokens src/theming/theme.ts",
+    "start": "serve -s storybook-static",
+    "heroku-postbuild": "yarn build-storybook"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.0"
+    "@chakra-ui/react": "^1.6.0",
+    "serve": "^11.3.2"
   },
   "peerDependencies": {
     "@chakra-ui/react": "^1.6.0",
