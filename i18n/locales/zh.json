@@ -1,0 +1,137 @@
+{
+  "translation": {
+    "dir": "ltr",
+
+    "app_card_title": "Cut the Rope 2",
+    "app_card_description": "传奇的《割绳子》逻辑拼图系列的第二部分。立即免费获取！",
+    "app_card_button_open": "打开",
+    "app_card_in_app": "应用内",
+    "app_card_purchases": "采购",
+
+    "app_store_search": "搜索",
+    "app_store_apps": "应用",
+    "app_store_games": "游戏类",
+    "app_store_movies_tv": "电影",
+    "app_store_books": "图书",
+    "app_store_select_category": "选择类别",
+    "app_store_action": "行动",
+    "app_store_adventure": "冒险",
+    "app_store_casual": "随意的",
+    "app_store_top_rated": "最高评分",
+
+    "charts_line_daily": "日常的",
+    "charts_line_weekly": "每周",
+    "charts_line_monthly": "每月一次",
+
+    "data_display_badge_default": "默认",
+    "data_display_badge_success": "成功",
+    "data_display_badge_removed": "已移除",
+    "data_display_badge_new": "新的",
+
+    "data_display_tag_blouse": "衬衫",
+    "data_display_tag_skirt": "短裙",
+    "data_display_tag_trousers": "裤子",
+
+    "disclosure_accordion_section_one_title": "第一节标题",
+    "disclosure_accordion_section_two_title": "第2节标题",
+
+    "disclosure_tabs_apps": "应用",
+    "disclosure_tabs_games": "游戏类",
+    "disclosure_tabs_movie_tv": "电影",
+    "disclosure_tabs_books": "图书",
+
+    "feedback_alert_title": "您的浏览器已过时！",
+    "feedback_alert_description": "您的AIR体验可能会下降。",
+
+    "feedback_toast_button":"显示吐司",
+    "feedback_toast_title": "帐户已创建。",
+    "feedback_toast_description": "我们已经为您创建了您的帐户。",
+
+    "forms_button_text": "按钮",
+    
+    "forms_editable_text": "可编辑文字",
+    "forms_editable_custom_controls_text": "带控件的可编辑文本",
+    
+    "forms_form_control_helper_text_label": "电子邮件地址",
+    "forms_form_control_helper_text_placeholder": "电子邮件地址",
+    "forms_form_control_helper_text_helper": "我们将永远不会分享您的电子邮件。",
+    
+    "forms_form_control_error_text_label": "电子邮件地址",
+    "forms_form_control_error_text_placeholder": "电子邮件地址",
+    "forms_form_control_error_text_error": "电子邮件不存在",
+
+    "forms_form_control_textarea_error_text_label": "写评论",
+    "forms_form_control_textarea_error_text_placeholder": "描述你的经历",
+    "forms_form_control_textarea_error_text_error": "评论太短",
+
+    "form_input_usage_placeholder": "基本用法",
+    "form_input_password_placeholder": "输入密码",
+
+    "form_radio_option_1": "第一的",
+    "form_radio_option_2": "第二",
+    "form_radio_option_3": "第三",
+
+    "form_search_placeholder": "搜索",
+
+    "form_select_placeholder": "选择选项",
+    "form_select_option_one": "选项1",
+    "form_select_option_two": "选项2",
+    "form_select_option_three": "选项3",
+
+    "form_textarea_placeholder": "基本用法",
+
+    "navigation_breadcrumb_home": "家",
+    "navigation_breadcrumb_docs": "文件",
+    "navigation_breadcrumb_breadcrumb": "面包屑",
+    "navigation_breadcrumb_about": "关于",
+    "navigation_breadcrumb_contact": "接触",
+
+    "navigation_link": "默认链接",
+
+    "others_portal_im_here": "我在这，",
+    "others_portal_description": "该文本位于document.body的末尾！",
+
+    "others_transitions_button": "点击我",
+    "others_transitions_fade": "褪色",
+    "others_transitions_scale_fade": "比例淡入",
+    "others_transitions_slide": "滑动",
+    "others_transitions_slide_fade": "幻灯片淡入淡出",
+    "others_transitions_collapse": "坍塌",
+    "others_transitions_collapse_show_more": "展示更多",
+    "others_transitions_collapse_show_less": "显示较少",
+
+    "overlay_alert_dialog_button": "删除客户",
+    "overlay_alert_dialog_title": "删除客户",
+    "overlay_alert_dialog_description": "你确定吗？之后，您将无法撤消此操作。",
+    "overlay_alert_dialog_primary_button": "取消",
+    "overlay_alert_dialog_secondary_button": "删除",
+
+    "overlay_drawer_button": "打开",
+    "overlay_drawer_title": "创建您的帐户",
+    "overlay_drawer_primary_button": "保存",
+    "overlay_drawer_secondary_button": "取消",
+
+    "overlay_menu_button": "动作",
+    "overlay_menu_item_1": "下载",
+    "overlay_menu_item_2": "建立副本",
+    "overlay_menu_item_3": "标记为草稿",
+    "overlay_menu_item_4": "删除",
+    "overlay_menu_item_5": "参加工作坊",
+
+    "overlay_modal_button": "开放模式",
+    "overlay_modal_title": "模态标题",
+    "overlay_modal_description": "模态车身",
+    "overlay_modal_primary_button": "取消",
+    "overlay_modal_secondary_button": "次要行动",
+
+    "overlay_popover_button": "扳机",
+    "overlay_popover_title": "确认！",
+    "overlay_popover_description": "您确定要下订单吗？",
+
+    "overlay_tooltip_text": "悬停我",
+    "overlay_tooltip_tooltip": "嘿，我在这里！",
+
+    "typography_heading": "标题",
+    "typography_text": "文本"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "translation": {
+    "dir": "ltr",
+
+    "app_card_title": "Cut the Rope 2",
+    "app_card_description": "Second part of the legendary Cut the Rope logic puzzles series. Get it now for free!",
+    "app_card_button_open": "OPEN",
+    "app_card_in_app": "In-App",
+    "app_card_purchases": "Purchases",
+
+    "app_store_search": "Search",
+    "app_store_apps": "Apps",
+    "app_store_games": "Games",
+    "app_store_movies_tv": "Movies & TV",
+    "app_store_books": "Books",
+    "app_store_select_category": "Select category",
+    "app_store_action": "Action",
+    "app_store_adventure": "Adventure",
+    "app_store_casual": "Casual",
+    "app_store_top_rated": "Top rated",
+
+    "charts_line_daily": "Daily",
+    "charts_line_weekly": "Weekly",
+    "charts_line_monthly": "Monthly",
+
+    "data_display_badge_default": "default",
+    "data_display_badge_success": "success",
+    "data_display_badge_removed": "removed",
+    "data_display_badge_new": "new",
+
+    "data_display_tag_blouse": "blouse",
+    "data_display_tag_skirt": "skirt",
+    "data_display_tag_trousers": "trousers",
+
+    "disclosure_accordion_section_one_title": "Section 1 title",
+    "disclosure_accordion_section_two_title": "Section 2 title",
+
+    "disclosure_tabs_apps": "Apps",
+    "disclosure_tabs_games": "Games",
+    "disclosure_tabs_movie_tv": "Movie & TV",
+    "disclosure_tabs_books": "Books",
+
+    "feedback_alert_title": "Your browser is outdated!",
+    "feedback_alert_description": "Your AIR experience may be degraded.",
+
+    "feedback_toast_button":"Show Toast",
+    "feedback_toast_title": "Account created.",
+    "feedback_toast_description": "We've created your account for you.",
+
+    "forms_button_text": "button",
+    
+    "forms_editable_text": "Editable text",
+    "forms_editable_custom_controls_text": "Editable text with controls",
+    
+    "forms_form_control_helper_text_label": "Email address",
+    "forms_form_control_helper_text_placeholder": "email address",
+    "forms_form_control_helper_text_helper": "We'll never share your email.",
+    
+    "forms_form_control_error_text_label": "Email address",
+    "forms_form_control_error_text_placeholder": "email address",
+    "forms_form_control_error_text_error": "Email does not exist",
+
+    "forms_form_control_textarea_error_text_label": "Write a review",
+    "forms_form_control_textarea_error_text_placeholder": "Describe your experience",
+    "forms_form_control_textarea_error_text_error": "review too short",
+
+    "form_input_usage_placeholder": "basic usage",
+    "form_input_password_placeholder": "enter password",
+
+    "form_radio_option_1": "First",
+    "form_radio_option_2": "Second",
+    "form_radio_option_3": "Third",
+
+    "form_search_placeholder": "Search",
+
+    "form_select_placeholder": "Select option",
+    "form_select_option_one": "Option 1",
+    "form_select_option_two": "Option 2",
+    "form_select_option_three": "Option 3",
+
+    "form_textarea_placeholder": "basic usage",
+
+    "navigation_breadcrumb_home": "Home",
+    "navigation_breadcrumb_docs": "Docs",
+    "navigation_breadcrumb_breadcrumb": "Breadcrumb",
+    "navigation_breadcrumb_about": "About",
+    "navigation_breadcrumb_contact": "Contact",
+
+    "navigation_link": "default link",
+
+    "others_portal_im_here": "I'm here,",
+    "others_portal_description": "This text is portaled at the end of document.body!",
+
+    "others_transitions_button": "Click Me",
+    "others_transitions_fade": "Fade",
+    "others_transitions_scale_fade": "Scale Fade",
+    "others_transitions_slide": "Slide",
+    "others_transitions_slide_fade": "Slide fade",
+    "others_transitions_collapse": "Collapse",
+    "others_transitions_collapse_show_more": "Show More",
+    "others_transitions_collapse_show_less": "Show Less",
+
+    "overlay_alert_dialog_button": "Delete Customer",
+    "overlay_alert_dialog_title": "Delete Customer",
+    "overlay_alert_dialog_description": "Are you sure? You can't undo this action afterwards.",
+    "overlay_alert_dialog_primary_button": "Cancel",
+    "overlay_alert_dialog_secondary_button": "Delete",
+
+    "overlay_drawer_button": "Open",
+    "overlay_drawer_title": "Create your account",
+    "overlay_drawer_primary_button": "Save",
+    "overlay_drawer_secondary_button": "Cancel",
+
+    "overlay_menu_button": "Actions",
+    "overlay_menu_item_1": "Download",
+    "overlay_menu_item_2": "Create a Copy",
+    "overlay_menu_item_3": "Mark as Draft",
+    "overlay_menu_item_4": "Delete",
+    "overlay_menu_item_5": "Attend a Workshop",
+
+    "overlay_modal_button": "Open Modal",
+    "overlay_modal_title": "Modal Title",
+    "overlay_modal_description": "Modal body",
+    "overlay_modal_primary_button": "Cancel",
+    "overlay_modal_secondary_button": "Secondary Action",
+
+    "overlay_popover_button": "Trigger",
+    "overlay_popover_title": "Confirmation!",
+    "overlay_popover_description": "Are you sure you want to place this order?",
+
+    "overlay_tooltip_text": "Hover me",
+    "overlay_tooltip_tooltip": "Hey, I'm here!",
+
+    "typography_heading": "Heading",
+    "typography_text": "Text"
+  }
+}

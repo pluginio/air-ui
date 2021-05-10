@@ -1,0 +1,136 @@
+{
+  "translation": {
+    "dir": "ltr",
+    "app_card_title": "Cut the Rope 2",
+    "app_card_description": "Segunda parte de la legendaria serie de acertijos lógicos Cut the Rope. ¡Consíguelo ahora gratis!",
+    "app_card_button_open": "abierto",
+    "app_card_in_app": "En la aplicación",
+    "app_card_purchases": "Compras",
+
+    "app_store_search": "Buscar",
+    "app_store_apps": "Aplicaciones",
+    "app_store_games": "Juegos",
+    "app_store_movies_tv": "Películas",
+    "app_store_books": "Libros",
+    "app_store_select_category": "Selecciona una categoría",
+    "app_store_action": "Acción",
+    "app_store_adventure": "Aventuras",
+    "app_store_casual": "Casual",
+    "app_store_top_rated": "Los más valorados",
+
+    "charts_line_daily": "Diario",
+    "charts_line_weekly": "Semanal",
+    "charts_line_monthly": "Mensual",
+
+    "data_display_badge_default": "defecto",
+    "data_display_badge_success": "éxito",
+    "data_display_badge_removed": "remoto",
+    "data_display_badge_new": "nuevo",
+
+    "data_display_tag_blouse": "blusa",
+    "data_display_tag_skirt": "falda",
+    "data_display_tag_trousers": "pantalones",
+
+    "disclosure_accordion_section_one_title": "Título de la sección 1",
+    "disclosure_accordion_section_two_title": "Título de la sección 2",
+
+    "disclosure_tabs_apps": "Aplicaciones",
+    "disclosure_tabs_games": "Juegos",
+    "disclosure_tabs_movie_tv": "Películas",
+    "disclosure_tabs_books": "Libros",
+
+    "feedback_alert_title": "¡Tu navegador está desactualizado!",
+    "feedback_alert_description": "Su experiencia con AIR puede verse degradada.",
+
+    "feedback_toast_button":"Mostrar brindis",
+    "feedback_toast_title": "Cuenta creada.",
+    "feedback_toast_description": "Hemos creado su cuenta para usted.",
+
+    "forms_button_text": "botón",
+
+    "forms_editable_text": "Texto editable",
+    "forms_editable_custom_controls_text": "Texto editable con controles",
+    
+    "forms_form_control_helper_text_label": "Dirección de correo electrónico",
+    "forms_form_control_helper_text_placeholder": "dirección de correo electrónico",
+    "forms_form_control_helper_text_helper": "Nunca compartiremos su correo electrónico.",
+    
+    "forms_form_control_error_text_label": "Dirección de correo electrónico",
+    "forms_form_control_error_text_placeholder": "dirección de correo electrónico",
+    "forms_form_control_error_text_error": "El correo electrónico no existe",
+
+    "forms_form_control_textarea_error_text_label": "Escribe una reseña",
+    "forms_form_control_textarea_error_text_placeholder": "Describe tu experiencia",
+    "forms_form_control_textarea_error_text_error": "revisión demasiado corta",
+
+    "form_input_usage_placeholder": "uso básico",
+    "form_input_password_placeholder": "enter password",
+
+    "form_radio_option_1": "Primero",
+    "form_radio_option_2": "Segundo",
+    "form_radio_option_3": "Tercero",
+
+    "form_search_placeholder": "Buscar",
+
+    "form_select_placeholder": "Seleccionar opción",
+    "form_select_option_one": "Opción 1",
+    "form_select_option_two": "opcion 2",
+    "form_select_option_three": "Opcion 3",
+
+    "form_textarea_placeholder": "uso básico",
+
+    "navigation_breadcrumb_home": "Casa",
+    "navigation_breadcrumb_docs": "Docs",
+    "navigation_breadcrumb_breadcrumb": "Migaja de pan",
+    "navigation_breadcrumb_about": "Acerca de",
+    "navigation_breadcrumb_contact": "Contacto",
+
+    "navigation_link": "enlace predeterminado",
+
+    "others_portal_im_here": "Estoy aquí,",
+    "others_portal_description": "¡Este texto se incluye al final de document.body!",
+
+    "others_transitions_button": "Haz click en mi",
+    "others_transitions_fade": "Desvanecerse",
+    "others_transitions_scale_fade": "Desvanecimiento de escala",
+    "others_transitions_slide": "Diapositiva",
+    "others_transitions_slide_fade": "Desvanecimiento de diapositivas",
+    "others_transitions_collapse": "Colapso",
+    "others_transitions_collapse_show_more": "Mostrar más",
+    "others_transitions_collapse_show_less": "Muestra menos",
+
+    "overlay_alert_dialog_button": "Eliminar cliente",
+    "overlay_alert_dialog_title": "Eliminar cliente",
+    "overlay_alert_dialog_description": "¿Está seguro? No puede deshacer esta acción después.",
+    "overlay_alert_dialog_primary_button": "Cancelar",
+    "overlay_alert_dialog_secondary_button": "Borrar",
+
+    "overlay_drawer_button": "Abierto",
+    "overlay_drawer_title": "Crea tu cuenta",
+    "overlay_drawer_primary_button": "Ahorrar",
+    "overlay_drawer_secondary_button": "Cancelar",
+
+    "overlay_menu_button": "Comportamiento",
+    "overlay_menu_item_1": "Descargar",
+    "overlay_menu_item_2": "Crear una copia",
+    "overlay_menu_item_3": "Marcar como borrador",
+    "overlay_menu_item_4": "Borrar",
+    "overlay_menu_item_5": "Asistir a un taller",
+
+    "overlay_modal_button": "Modal abierto",
+    "overlay_modal_title": "Título modal",
+    "overlay_modal_description": "Cuerpo modal",
+    "overlay_modal_primary_button": "Cancelar",
+    "overlay_modal_secondary_button": "Acción secundaria",
+
+    "overlay_popover_button": "Desencadenar",
+    "overlay_popover_title": "¡Confirmación!",
+    "overlay_popover_description": "¿Estás seguro de que quieres hacer este pedido?",
+
+    "overlay_tooltip_text": "Colócame",
+    "overlay_tooltip_tooltip": "¡Hola estoy aqui!",
+
+    "typography_heading": "Bóveda",
+    "typography_text": "Texto"
+  }
+}

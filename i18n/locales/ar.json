@@ -1,0 +1,137 @@
+{
+  "translation": {
+    "dir": "rtl",
+
+    "app_card_title": "Cut the Rope 2",
+    "app_card_description": "الجزء الثاني من سلسلة ألغاز منطق Cut the Rope الأسطورية. احصل عليه الان مجانا!",
+    "app_card_button_open": "افتح",
+    "app_card_in_app": "داخل التطبيق",
+    "app_card_purchases": "المشتريات",
+
+    "app_store_search": "يبحث",
+    "app_store_apps": "تطبيقات",
+    "app_store_games": "ألعاب",
+    "app_store_movies_tv": "أفلام",
+    "app_store_books": "كتب",
+    "app_store_select_category": "اختر الفئة",
+    "app_store_action": "عمل",
+    "app_store_adventure": "مغامرة",
+    "app_store_casual": "غير رسمي",
+    "app_store_top_rated": "أعلى التقييمات",
+
+    "charts_line_daily": "اليومي",
+    "charts_line_weekly": "أسبوعي",
+    "charts_line_monthly": "شهريا",
+
+    "data_display_badge_default": "إفتراضي",
+    "data_display_badge_success": "نجاح",
+    "data_display_badge_removed": "إزالة",
+    "data_display_badge_new": "الجديد",
+    
+    "data_display_tag_blouse": "بلوزة",
+    "data_display_tag_skirt": "تنورة",
+    "data_display_tag_trousers": "بنطلون",
+
+    "disclosure_accordion_section_one_title": "عنوان القسم 1",
+    "disclosure_accordion_section_two_title": "عنوان القسم 2",
+
+    "disclosure_tabs_apps": "تطبيقات",
+    "disclosure_tabs_games": "ألعاب",
+    "disclosure_tabs_movie_tv": "فيلم",
+    "disclosure_tabs_books": "كتب",
+
+    "feedback_alert_title": "متصفحك قديم!",
+    "feedback_alert_description": "قد تتدهور تجربة AIR الخاصة بك.",
+
+    "feedback_toast_button":"عرض توست",
+    "feedback_toast_title": "تم إنشاء الحساب.",
+    "feedback_toast_description": "لقد أنشأنا حسابك من أجلك.",
+
+    "forms_button_text": "زر",
+
+    "forms_editable_text": "نص قابل للتحرير",
+    "forms_editable_custom_controls_text": "نص قابل للتحرير مع عناصر تحكم",
+    
+    "forms_form_control_helper_text_label": "عنوان البريد الإلكتروني",
+    "forms_form_control_helper_text_placeholder": "عنوان البريد الإلكتروني",
+    "forms_form_control_helper_text_helper": "لن نشارك بريدك الإلكتروني أبدًا.",
+    
+    "forms_form_control_error_text_label": "عنوان البريد الإلكتروني",
+    "forms_form_control_error_text_placeholder": "عنوان البريد الإلكتروني",
+    "forms_form_control_error_text_error": "البريد الإلكتروني غير موجود",
+
+    "forms_form_control_textarea_error_text_label": "أكتب مراجعة",
+    "forms_form_control_textarea_error_text_placeholder": "صِف تجربتك",
+    "forms_form_control_textarea_error_text_error": "المراجعة قصيرة جدًا",
+
+    "form_input_usage_placeholder": "الاستخدام الأساسي",
+    "form_input_password_placeholder": "أدخل كلمة المرور",
+
+    "form_radio_option_1": "أولا",
+    "form_radio_option_2": "ثانية",
+    "form_radio_option_3": "ثالث",
+
+    "form_search_placeholder": "يبحث",
+
+    "form_select_placeholder": "حدد الخيار",
+    "form_select_option_one": "الخيار 1",
+    "form_select_option_two": "الخيار 2",
+    "form_select_option_three": "الخيار 3",
+
+    "form_textarea_placeholder": "الاستخدام الأساسي",
+
+    "navigation_breadcrumb_home": "منزل، بيت",
+    "navigation_breadcrumb_docs": "المستندات",
+    "navigation_breadcrumb_breadcrumb": "مسار التنقل",
+    "navigation_breadcrumb_about": "حول",
+    "navigation_breadcrumb_contact": "اتصال",
+
+    "navigation_link": "الارتباط الافتراضي",
+
+    "others_portal_im_here": "أنا هنا،",
+    "others_portal_description": "هذا النص هو المدخل في نهاية document.body!",
+
+    "others_transitions_button": "انقر فوق لي",
+    "others_transitions_fade": "يختفي",
+    "others_transitions_scale_fade": "مقياس تتلاشى",
+    "others_transitions_slide": "الانزلاق",
+    "others_transitions_slide_fade": "تتلاشى الشرائح",
+    "others_transitions_collapse": "انهيار",
+    "others_transitions_collapse_show_more": "أظهر المزيد",
+    "others_transitions_collapse_show_less": "عرض أقل",
+
+    "overlay_alert_dialog_button": "حذف العميل",
+    "overlay_alert_dialog_title": "حذف العميل",
+    "overlay_alert_dialog_description": "هل أنت واثق؟ لا يمكنك التراجع عن هذا الإجراء بعد ذلك.",
+    "overlay_alert_dialog_primary_button": "يلغي",
+    "overlay_alert_dialog_secondary_button": "حذف",
+
+    "overlay_drawer_button": "فتح",
+    "overlay_drawer_title": "أنشئ حسابك",
+    "overlay_drawer_primary_button": "يحفظ",
+    "overlay_drawer_secondary_button": "يلغي",
+
+    "overlay_menu_button": "أجراءات",
+    "overlay_menu_item_1": "تحميل",
+    "overlay_menu_item_2": "قم بإنشاء نسخة",
+    "overlay_menu_item_3": "وضع علامة كمسودة",
+    "overlay_menu_item_4": "حذف",
+    "overlay_menu_item_5": "احضر ورشة عمل",
+
+    "overlay_modal_button": "فتح مشروط",
+    "overlay_modal_title": "عنوان مشروط",
+    "overlay_modal_description": "هيئة مشروط",
+    "overlay_modal_primary_button": "يلغي",
+    "overlay_modal_secondary_button": "عمل ثانوي",
+
+    "overlay_popover_button": "اثار",
+    "overlay_popover_title": "تأكيد!",
+    "overlay_popover_description": "هل أنت متأكد أنك تريد تقديم هذا الطلب؟",
+
+    "overlay_tooltip_text": "تحوم فوقي",
+    "overlay_tooltip_tooltip": "مرحبًا ، أنا هنا!",
+
+    "typography_heading": "عنوان",
+    "typography_text": "نص"
+  }
+}

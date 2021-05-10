@@ -1,0 +1,137 @@
+{
+  "translation": {
+    "dir": "ltr",
+
+    "app_card_title": "Cut the Rope 2",
+    "app_card_description": "전설적인 Cut the Rope 논리 퍼즐 시리즈의 두 번째 부분입니다. 지금 무료로 받으세요!",
+    "app_card_button_open": "열다",
+    "app_card_in_app": "인앱",
+    "app_card_purchases": "구매",
+
+    "app_store_search": "검색",
+    "app_store_apps": "앱",
+    "app_store_games": "계략",
+    "app_store_movies_tv": "영화 산업",
+    "app_store_books": "서적",
+    "app_store_select_category": "카테고리 선택",
+    "app_store_action": "동작",
+    "app_store_adventure": "모험",
+    "app_store_casual": "평상복",
+    "app_store_top_rated": "최고 등급",
+
+    "charts_line_daily": "매일",
+    "charts_line_weekly": "주간",
+    "charts_line_monthly": "월간 간행물",
+
+    "data_display_badge_default": "기본",
+    "data_display_badge_success": "성공",
+    "data_display_badge_removed": "제거됨",
+    "data_display_badge_new": "새로운",
+
+    "data_display_tag_blouse": "바지",
+    "data_display_tag_skirt": "치마",
+    "data_display_tag_trousers": "바지",
+
+    "disclosure_accordion_section_one_title": "섹션 1 제목",
+    "disclosure_accordion_section_two_title": "섹션 2 제목",
+
+    "disclosure_tabs_apps": "앱",
+    "disclosure_tabs_games": "계략",
+    "disclosure_tabs_movie_tv": "영화 산업",
+    "disclosure_tabs_books": "서적",
+
+    "feedback_alert_title": "브라우저가 오래되었습니다!",
+    "feedback_alert_description": "AIR 경험이 저하 될 수 있습니다.",
+
+    "feedback_toast_button":"토스트 표시",
+    "feedback_toast_title": "계정이 생성되었습니다.",
+    "feedback_toast_description": "귀하의 계정을 만들었습니다.",
+
+    "forms_button_text": "단추",
+
+    "forms_editable_text": "편집 가능한 텍스트",
+    "forms_editable_custom_controls_text": "컨트롤이있는 편집 가능한 텍스트",
+    
+    "forms_form_control_helper_text_label": "이메일 주소",
+    "forms_form_control_helper_text_placeholder": "이메일 주소",
+    "forms_form_control_helper_text_helper": "우리는 귀하의 이메일을 절대 공유하지 않습니다.",
+    
+    "forms_form_control_error_text_label": "이메일 주소",
+    "forms_form_control_error_text_placeholder": "이메일 주소",
+    "forms_form_control_error_text_error": "이메일이 없습니다.",
+
+    "forms_form_control_textarea_error_text_label": "리뷰를 작성",
+    "forms_form_control_textarea_error_text_placeholder": "귀하의 경험을 설명하십시오",
+    "forms_form_control_textarea_error_text_error": "너무 짧은 리뷰",
+
+    "form_input_usage_placeholder": "기본 사용법",
+    "form_input_password_placeholder": "암호를 입력",
+
+    "form_radio_option_1": "먼저",
+    "form_radio_option_2": "둘째",
+    "form_radio_option_3": "제삼",
+
+    "form_search_placeholder": "검색",
+
+    "form_select_placeholder": "옵션 선택",
+    "form_select_option_one": "옵션 1",
+    "form_select_option_two": "옵션 2",
+    "form_select_option_three": "옵션 3",
+
+    "form_textarea_placeholder": "기본 사용법",
+
+    "navigation_breadcrumb_home": "집",
+    "navigation_breadcrumb_docs": "문서",
+    "navigation_breadcrumb_breadcrumb": "브레드 크럼",
+    "navigation_breadcrumb_about": "약",
+    "navigation_breadcrumb_contact": "접촉",
+
+    "navigation_link": "기본 링크",
+
+    "others_portal_im_here": "여기 있어요",
+    "others_portal_description": "이 텍스트는 document.body의 끝 부분에 있습니다!",
+
+    "others_transitions_button": "클릭 해주세요",
+    "others_transitions_fade": "바래다",
+    "others_transitions_scale_fade": "스케일 페이드",
+    "others_transitions_slide": "미끄러지 다",
+    "others_transitions_slide_fade": "슬라이드 페이드",
+    "others_transitions_collapse": "무너짐",
+    "others_transitions_collapse_show_more": "자세히보기",
+    "others_transitions_collapse_show_less": "간단히보기",
+
+    "overlay_alert_dialog_button": "고객 삭제",
+    "overlay_alert_dialog_title": "고객 삭제",
+    "overlay_alert_dialog_description": "확실합니까? 나중에이 작업을 실행 취소 할 수 없습니다.",
+    "overlay_alert_dialog_primary_button": "취소",
+    "overlay_alert_dialog_secondary_button": "지우다",
+
+    "overlay_drawer_button": "열다",
+    "overlay_drawer_title": "계정 생성",
+    "overlay_drawer_primary_button": "저장",
+    "overlay_drawer_secondary_button": "취소",
+
+    "overlay_menu_button": "행위",
+    "overlay_menu_item_1": "다운로드",
+    "overlay_menu_item_2": "사본 만들기",
+    "overlay_menu_item_3": "초안으로 표시",
+    "overlay_menu_item_4": "지우다",
+    "overlay_menu_item_5": "워크숍 참석",
+
+    "overlay_modal_button": "모달 열기",
+    "overlay_modal_title": "모달 제목",
+    "overlay_modal_description": "모달 바디",
+    "overlay_modal_primary_button": "취소",
+    "overlay_modal_secondary_button": "2 차 조치",
+
+    "overlay_popover_button": "방아쇠",
+    "overlay_popover_title": "확인!",
+    "overlay_popover_description": "이 주문을 하시겠습니까?",
+
+    "overlay_tooltip_text": "나를 가리켜",
+    "overlay_tooltip_tooltip": "나 여기있어!",
+
+    "typography_heading": "표제",
+    "typography_text": "본문"
+  }
+}

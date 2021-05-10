@@ -1,0 +1,137 @@
+{
+  "translation": {
+    "dir": "ltr",
+
+    "app_card_title": "Cut the Rope 2",
+    "app_card_description": "ส่วนที่สองของซีรีส์ปริศนาตรรกะ Cut the Rope ในตำนาน รับทันทีฟรี!",
+    "app_card_button_open": "เปิด",
+    "app_card_in_app": "ในแอป",
+    "app_card_purchases": "การซื้อ",
+
+    "app_store_search": "ค้นหา",
+    "app_store_apps": "แอป",
+    "app_store_games": "เกม",
+    "app_store_movies_tv": "ภาพยนตร์",
+    "app_store_books": "หนังสือ",
+    "app_store_select_category": "เลือกหมวดหมู่",
+    "app_store_action": "หนังบู๊",
+    "app_store_adventure": "การผจญภัย",
+    "app_store_casual": "สบาย ๆ",
+    "app_store_top_rated": "ระดับสูง",
+
+    "charts_line_daily": "รายวัน",
+    "charts_line_weekly": "รายสัปดาห์",
+    "charts_line_monthly": "รายเดือน",
+
+    "data_display_badge_default": "ค่าเริ่มต้น",
+    "data_display_badge_success": "ความสำเร็จ",
+    "data_display_badge_removed": "ลบออก",
+    "data_display_badge_new": "ใหม่",
+
+    "data_display_tag_blouse": "เสื้อผู้หญิง",
+    "data_display_tag_skirt": "กระโปรง",
+    "data_display_tag_trousers": "กางเกง",
+
+    "disclosure_accordion_section_one_title": "หัวข้อที่ 1",
+    "disclosure_accordion_section_two_title": "หัวข้อที่ 2",
+
+    "disclosure_tabs_apps": "แอป",
+    "disclosure_tabs_games": "เกม",
+    "disclosure_tabs_movie_tv": "ภาพยนตร์",
+    "disclosure_tabs_books": "หนังสือ",
+
+    "feedback_alert_title": "เบราว์เซอร์ของคุณล้าสมัย!",
+    "feedback_alert_description": "ประสบการณ์ AIR ของคุณอาจลดลง",
+
+    "feedback_toast_button":"แสดงขนมปังปิ้ง",
+    "feedback_toast_title": "สร้างบัญชีแล้ว",
+    "feedback_toast_description": "เราได้สร้างบัญชีของคุณให้คุณแล้ว",
+
+    "forms_button_text": "ปุ่ม",
+    
+    "forms_editable_text": "ข้อความที่แก้ไขได้",
+    "forms_editable_custom_controls_text": "ข้อความที่แก้ไขได้ด้วยการควบคุม",
+    
+    "forms_form_control_helper_text_label": "ที่อยู่อีเมล",
+    "forms_form_control_helper_text_placeholder": "ที่อยู่อีเมล",
+    "forms_form_control_helper_text_helper": "เราจะไม่แบ่งปันอีเมลของคุณ",
+    
+    "forms_form_control_error_text_label": "ที่อยู่อีเมล",
+    "forms_form_control_error_text_placeholder": "ที่อยู่อีเมล",
+    "forms_form_control_error_text_error": "ไม่มีอีเมล",
+
+    "forms_form_control_textarea_error_text_label": "แสดงความคิดเห็น",
+    "forms_form_control_textarea_error_text_placeholder": "อธิบายประสบการณ์ของคุณ",
+    "forms_form_control_textarea_error_text_error": "บทวิจารณ์สั้นเกินไป",
+
+    "form_input_usage_placeholder": "การใช้งานพื้นฐาน",
+    "form_input_password_placeholder": "ใส่รหัสผ่าน",
+
+    "form_radio_option_1": "อันดับแรก",
+    "form_radio_option_2": "ประการที่สอง",
+    "form_radio_option_3": "ประการที่สาม",
+
+    "form_search_placeholder": "ค้นหา",
+
+    "form_select_placeholder": "เลือกตัวเลือก",
+    "form_select_option_one": "ตัวเลือกที่ 1",
+    "form_select_option_two": "ทางเลือกที่ 2",
+    "form_select_option_three": "ทางเลือกที่ 3",
+
+    "form_textarea_placeholder": "การใช้งานพื้นฐาน",
+
+    "navigation_breadcrumb_home": "บ้าน",
+    "navigation_breadcrumb_docs": "เอกสาร",
+    "navigation_breadcrumb_breadcrumb": "เบรดครัมบ์",
+    "navigation_breadcrumb_about": "เกี่ยวกับ",
+    "navigation_breadcrumb_contact": "ติดต่อ",
+
+    "navigation_link": "ลิงค์เริ่มต้น",
+
+    "others_portal_im_here": "ฉันอยู่นี่,",
+    "others_portal_description": "ข้อความนี้ถูกย้ายไปที่ส่วนท้ายของ document.body!",
+
+    "others_transitions_button": "คลิกฉัน",
+    "others_transitions_fade": "เลือนหายไป",
+    "others_transitions_scale_fade": "ลดขนาด",
+    "others_transitions_slide": "สไลด์",
+    "others_transitions_slide_fade": "สไลด์จาง",
+    "others_transitions_collapse": "ยุบ",
+    "others_transitions_collapse_show_more": "แสดงมากขึ้น",
+    "others_transitions_collapse_show_less": "แสดงน้อยลง",
+
+    "overlay_alert_dialog_button": "ลบลูกค้า",
+    "overlay_alert_dialog_title": "ลบลูกค้า",
+    "overlay_alert_dialog_description": "คุณแน่ใจไหม? คุณไม่สามารถยกเลิกการดำเนินการนี้ได้ในภายหลัง",
+    "overlay_alert_dialog_primary_button": "ยกเลิก",
+    "overlay_alert_dialog_secondary_button": "ลบ",
+
+    "overlay_drawer_button": "เปิด",
+    "overlay_drawer_title": "สร้างบัญชีของคุณ",
+    "overlay_drawer_primary_button": "บันทึก",
+    "overlay_drawer_secondary_button": "ยกเลิก",
+
+    "overlay_menu_button": "การดำเนินการ",
+    "overlay_menu_item_1": "ดาวน์โหลด",
+    "overlay_menu_item_2": "สร้างสำเนา",
+    "overlay_menu_item_3": "ทำเครื่องหมายว่าเป็นฉบับร่าง",
+    "overlay_menu_item_4": "ลบ",
+    "overlay_menu_item_5": "เข้าร่วมการประชุมเชิงปฏิบัติการ",
+
+    "overlay_modal_button": "เปิด Modal",
+    "overlay_modal_title": "หัวข้อ Modal",
+    "overlay_modal_description": "ร่างกายกิริยา",
+    "overlay_modal_primary_button": "ยกเลิก",
+    "overlay_modal_secondary_button": "การดำเนินการรอง",
+
+    "overlay_popover_button": "ทริกเกอร์",
+    "overlay_popover_title": "คอนเฟิร์ม!",
+    "overlay_popover_description": "แน่ใจไหมว่าต้องการสั่งซื้อนี้",
+
+    "overlay_tooltip_text": "วางเมาส์เหนือฉัน",
+    "overlay_tooltip_tooltip": "เฮ้ฉันมาแล้ว!",
+
+    "typography_heading": "หัวเรื่อง",
+    "typography_text": "ข้อความ"
+  }
+}
