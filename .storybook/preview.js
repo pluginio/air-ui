@@ -43,14 +43,23 @@ export const parameters = {
   },
   actions: { 
     argTypesRegex: '^on[A-Z].*'
-  }
+  },
+  backgrounds: { disable: true }
 }
 
 const ThemeChanger = (context) => {
   const { setColorMode } = useColorMode();
+  const isDark = context.context.globals.theme === "dark"
 
   useEffect(() => {
-      setColorMode(context.context.globals.theme)
+    setColorMode(context.context.globals.theme)
+  }, [context.context.globals.theme, context])
+
+  useEffect(() => {
+    let docsStoryDiv = document.getElementsByClassName("docs-story")[0];
+    if(docsStoryDiv) {
+      docsStoryDiv.style.background = isDark ? "#101923" : "#EDF2F7"
+    }
   }, [context.context.globals.theme])
 
   return <div/>
