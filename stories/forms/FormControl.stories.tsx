@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import React from "react"
 import {
   FormControl,
@@ -12,6 +12,7 @@ import {
   InputLeftElement,
   Textarea,
   Icon,
+  FormControlProps,
 } from "../../src"
 import { BiError } from "react-icons/bi"
 import { HiOutlineMail } from "react-icons/hi"
@@ -22,25 +23,46 @@ export default {
   title: "Forms/FormControl",
 } as Meta
 
-export const FormControlInputWithHelperText = (args) => {
+const FormControlInputWithHelperTextTemplate: Story<FormControlProps> = (args) => {
   const { t } = useTranslation()
 
   return (
     <FormControl id="email">
       <FormLabel>{t("forms_form_control_helper_text_label")}</FormLabel>
-      <Input type="email" placeholder={t("forms_form_control_helper_text_placeholder")}/>
-      <FormHelperText>{t("forms_form_control_helper_text_helper")}</FormHelperText>
+      <Input
+        type="email"
+        placeholder={t("forms_form_control_helper_text_placeholder")}
+      />
+      <FormHelperText>
+        {t("forms_form_control_helper_text_helper")}
+      </FormHelperText>
     </FormControl>
   )
 }
 
-export const FormControlInputWithErrorText = (args) => {
+export const FormControlInputWithHelperText = FormControlInputWithHelperTextTemplate.bind({})
+FormControlInputWithHelperText.args = {}
+FormControlInputWithHelperText.parameters = {
+  docs: {
+    source: {
+      code: `
+<FormControl id="email">
+  <FormLabel>Email address</FormLabel>
+  <Input type="email" placeholder="email address" />
+  <FormHelperText>We'll never share your email.</FormHelperText>
+</FormControl>
+`,
+    },
+  },
+}
+
+const FormControlInputWithErrorTextTemplate: Story<FormControlProps> = (args) => {
   const { t } = useTranslation()
   const [value, setValue] = React.useState("")
   const handleChange = (event) => setValue(event.target.value)
 
   return (
-    <FormControl id="email" isInvalid isRequired colorScheme="error">
+    <FormControl id="email" isInvalid isRequired colorScheme="error" {...args}>
       <FormLabelContainer>
         <FormLabel>{t("forms_form_control_error_text_label")}</FormLabel>
         <FormLabelCounter count={value.length} maxCount={50} />
@@ -66,15 +88,51 @@ export const FormControlInputWithErrorText = (args) => {
   )
 }
 
-export const FormControlTextareaWithErrorText = (args) => {
+export const FormControlInputWithErrorText = FormControlInputWithErrorTextTemplate.bind({})
+FormControlInputWithErrorText.args = {}
+FormControlInputWithErrorText.parameters = {
+  docs: {
+    source: {
+      code: `
+<FormControl id="email" isInvalid isRequired colorScheme="error">
+  <FormLabelContainer>
+    <FormLabel>Email address</FormLabel>
+    <FormLabelCounter count={value.length} maxCount={50} />
+  </FormLabelContainer>
+  <InputGroup>
+    <InputLeftElement
+      pointerEvents="none"
+      children={<Icon as={HiOutlineMail} color="gray.300" />}
+    />
+    <Input
+      type="email"
+      placeholder="email address"
+      onChange={handleChange}
+      value={value}
+      max={50}
+    />
+  </InputGroup>
+  <FormErrorMessage display="flex">
+    <Icon me="2" as={BiError} />
+    Email does not exist
+  </FormErrorMessage>
+</FormControl>
+`,
+    },
+  },
+}
+
+const FormControlTextareaWithErrorTextTemplate: Story<FormControlProps> = (args) => {
   const { t } = useTranslation()
   const [value, setValue] = React.useState("")
   const handleChange = (event) => setValue(event.target.value)
 
   return (
-    <FormControl id="write-review" isInvalid>
+    <FormControl id="write-review" isInvalid {...args}>
       <FormLabelContainer>
-        <FormLabel>{t("forms_form_control_textarea_error_text_label")}</FormLabel>
+        <FormLabel>
+          {t("forms_form_control_textarea_error_text_label")}
+        </FormLabel>
         <FormLabelCounter count={value.length} maxCount={200} />
       </FormLabelContainer>
       <Textarea
@@ -86,9 +144,38 @@ export const FormControlTextareaWithErrorText = (args) => {
         maxLength={200}
       />
       <FormErrorMessage display="flex">
-        <Icon me="2" icon={<BiError />} />
+        <Icon me="2" as={BiError} />
         {t("forms_form_control_textarea_error_text_error")}
       </FormErrorMessage>
     </FormControl>
   )
+}
+
+export const FormControlTextareaWithErrorText = FormControlTextareaWithErrorTextTemplate.bind({})
+FormControlTextareaWithErrorText.args = {}
+FormControlTextareaWithErrorText.parameters = {
+  docs: {
+    source: {
+      code: `
+<FormControl id="write-review" isInvalid>
+  <FormLabelContainer>
+    <FormLabel>Write a review</FormLabel>
+    <FormLabelCounter count={value.length} maxCount={200} />
+  </FormLabelContainer>
+  <Textarea
+    type="text"
+    placeholder="Describe your experience"
+    onChange={handleChange}
+    value={value}
+    max={1}
+    maxLength={200}
+  />
+  <FormErrorMessage display="flex">
+    <Icon me="2" as={BiError} />
+    review too short
+  </FormErrorMessage>
+</FormControl>
+`,
+    },
+  },
 }

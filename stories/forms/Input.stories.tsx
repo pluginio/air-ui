@@ -1,10 +1,11 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import {
   Input,
   InputGroup,
   InputRightElement,
   Button,
+  InputProps,
 } from "../../src"
 import { useTranslation } from "react-i18next"
 
@@ -13,13 +14,25 @@ export default {
   title: "Forms/Input",
 } as Meta
 
-export const Usage = () => {
+const UsageTemplate: Story<InputProps> = (args) => {
   const { t } = useTranslation()
 
-  return <Input placeholder={t("form_input_usage_placeholder")} />
+  return <Input placeholder={t("form_input_usage_placeholder")} {...args} />
 }
 
-export const PasswordInput = () => {
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Input placeholder="basic usage" />
+`,
+    },
+  },
+}
+
+const PasswordInputTemplate: Story<InputProps> = (args) => {
   const { t } = useTranslation()
   const [show, setShow] = React.useState(false)
   const handleClick = () => setShow(!show)
@@ -27,7 +40,7 @@ export const PasswordInput = () => {
   return (
     <InputGroup size="md">
       <Input
-        pr="4.5rem"
+        pe="4.5rem"
         type={show ? "text" : "password"}
         placeholder={t("form_input_password_placeholder")}
       />
@@ -38,4 +51,34 @@ export const PasswordInput = () => {
       </InputRightElement>
     </InputGroup>
   )
+}
+
+export const PasswordInput = PasswordInputTemplate.bind({})
+PasswordInput.args = {}
+PasswordInput.parameters = {
+  docs: {
+    source: {
+      code: `
+const PasswordInput = () => {
+  const [show, setShow] = React.useState(false)
+  const handleClick = () => setShow(!show)
+
+  return (
+    <InputGroup size="md">
+      <Input
+        pe="4.5rem"
+        type={show ? "text" : "password"}
+        placeholder="enter password"
+      />
+      <InputRightElement width="4.5rem">
+        <Button h="1.75rem" size="sm" onClick={handleClick}>
+          {show ? "Hide" : "Show"}
+        </Button>
+      </InputRightElement>
+    </InputGroup>
+  )
+}
+`,
+    },
+  },
 }

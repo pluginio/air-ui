@@ -1,5 +1,5 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import { Heading, HeadingProps } from "../../src"
 import { useTranslation } from "react-i18next"
 
@@ -8,12 +8,20 @@ export default {
   title: "Typography/Heading",
 } as Meta
 
-export const Usage = (args: HeadingProps) => {
+const UsageTemplate: Story<HeadingProps> = (args) => {
   const { t } = useTranslation()
 
-  return (
-    <Heading {...args}>
-      {t("typography_heading")}
-    </Heading>
-  )
+  return <Heading {...args}>{t("typography_heading")}</Heading>
+}
+
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Heading>Heading</Heading>
+`,
+    },
+  },
 }

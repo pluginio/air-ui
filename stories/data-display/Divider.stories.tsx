@@ -7,7 +7,16 @@ export default {
   title: 'Data Display/Divider'
 } as Meta
 
-const Template: Story<DividerProps> = (args) => <Divider {...args} />
+const UsageTemplate: Story<DividerProps> = (args) => <Divider {...args} />
 
-export const Usage = Template.bind({})
-Usage.args = {} as DividerProps
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Divider />
+`,
+    },
+  },
+}

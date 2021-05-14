@@ -1,5 +1,5 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import {
   Drawer,
   DrawerOverlay,
@@ -18,7 +18,7 @@ export default {
   title: "Overlay/Drawer",
 } as Meta
 
-export const Usage = (args) => {
+const UsageTemplate: Story = () => {
   const { t } = useTranslation()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
@@ -52,4 +52,50 @@ export const Usage = (args) => {
       </Drawer>
     </>
   )
+}
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+const DrawerExample = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.useRef()
+
+  return (
+    <>
+      <Button ref={btnRef} onClick={onOpen}>
+        Open
+      </Button>
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay>
+          <DrawerContent>
+            <DrawerCloseButton />
+            <DrawerHeader>Create your account</DrawerHeader>
+
+            <DrawerBody></DrawerBody>
+
+            <DrawerFooter>
+              <Button variant="outline" mr={3} onClick={onClose}>
+                Cancel
+              </Button>
+              <Button>
+                Save
+              </Button>
+            </DrawerFooter>
+          </DrawerContent>
+        </DrawerOverlay>
+      </Drawer>
+    </>
+  )
+}
+`,
+    },
+  },
 }

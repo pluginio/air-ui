@@ -7,9 +7,22 @@ export default {
   title: 'Data Display/Kbd'
 } as Meta
 
-const Template: Story<KbdProps> = (args) => <Kbd {...args} />
+const UsageTemplate: Story<KbdProps> = (args) => (
+  <span>
+    <Kbd>shift</Kbd> + <Kbd>H</Kbd>
+  </span>
+)
 
-export const Usage = Template.bind({})
-Usage.args = {
-  children: "Shift"
-} as KbdProps
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<span>
+  <Kbd>shift</Kbd> + <Kbd>H</Kbd>
+</span>
+`,
+    },
+  },
+}

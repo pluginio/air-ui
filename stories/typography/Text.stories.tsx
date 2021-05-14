@@ -1,5 +1,5 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import { Text, TextProps } from "../../src"
 import { useTranslation } from "react-i18next"
 
@@ -8,8 +8,20 @@ export default {
   title: "Typography/Text",
 } as Meta
 
-export const Usage = (args: TextProps) => {
+const UsageTemplate: Story<TextProps> = (args) => {
   const { t } = useTranslation()
 
   return <Text {...args}>{t("typography_text")}</Text>
+}
+
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Text>Text</Text>
+`,
+    },
+  },
 }

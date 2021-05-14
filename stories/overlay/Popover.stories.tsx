@@ -1,5 +1,5 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import {
   Popover,
   PopoverTrigger,
@@ -17,7 +17,7 @@ export default {
   title: "Overlay/Popover",
 } as Meta
 
-export const Usage = () => {
+const UsageTemplate: Story = () => {
   const { t } = useTranslation()
 
   return (
@@ -33,4 +33,25 @@ export const Usage = () => {
       </PopoverContent>
     </Popover>
   )
+}
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Popover>
+  <PopoverTrigger>
+    <Button>Trigger</Button>
+  </PopoverTrigger>
+  <PopoverContent ms="2">
+    <PopoverArrow />
+    <PopoverCloseButton />
+    <PopoverHeader>Confirmation!</PopoverHeader>
+    <PopoverBody>Are you sure you want to place this order?</PopoverBody>
+  </PopoverContent>
+</Popover>
+`,
+    },
+  },
 }

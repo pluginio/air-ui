@@ -1,20 +1,21 @@
-import React from 'react'
-import { Meta } from '@storybook/react/types-6-0'
+import React from "react"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import {
   NumberInput,
   NumberInputField,
   NumberInputStepper,
   NumberIncrementStepper,
-  NumberDecrementStepper
-} from '../../src'
+  NumberDecrementStepper,
+  NumberInputProps,
+} from "../../src"
 
 export default {
   component: NumberInput,
-  title: 'Forms/NumberInput'
+  title: "Forms/NumberInput",
 } as Meta
 
-export const Usage = (args) => (
-  <NumberInput>
+const UsageTemplate: Story<NumberInputProps> = (args) => (
+  <NumberInput {...args}>
     <NumberInputField />
     <NumberInputStepper>
       <NumberIncrementStepper />
@@ -22,3 +23,21 @@ export const Usage = (args) => (
     </NumberInputStepper>
   </NumberInput>
 )
+
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<NumberInput>
+  <NumberInputField />
+  <NumberInputStepper>
+    <NumberIncrementStepper />
+    <NumberDecrementStepper />
+  </NumberInputStepper>
+</NumberInput>
+`,
+    },
+  },
+}

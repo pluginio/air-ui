@@ -1,6 +1,11 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "../../src"
+import { Meta, Story } from "@storybook/react/types-6-0"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbProps,
+} from "../../src"
 import { useTranslation } from "react-i18next"
 
 export default {
@@ -8,14 +13,14 @@ export default {
   title: "Navigation/Breadcrumb",
 } as Meta
 
-export const Usage = () => {
+const UsageTemplate: Story<BreadcrumbProps> = (args) => {
   const { t } = useTranslation()
 
   return (
-    <Breadcrumb>
+    <Breadcrumb {...args}>
       <BreadcrumbItem>
         <BreadcrumbLink href="#">
-          {t("form_textarea_placeholder")}
+          {t("navigation_breadcrumb_home")}
         </BreadcrumbLink>
       </BreadcrumbItem>
 
@@ -34,7 +39,37 @@ export const Usage = () => {
   )
 }
 
-export const Separators = () => {
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Breadcrumb>
+  <BreadcrumbItem>
+    <BreadcrumbLink href="#">
+      Home
+    </BreadcrumbLink>
+  </BreadcrumbItem>
+
+  <BreadcrumbItem>
+    <BreadcrumbLink href="#">
+      Docs
+    </BreadcrumbLink>
+  </BreadcrumbItem>
+
+  <BreadcrumbItem isCurrentPage>
+    <BreadcrumbLink href="#">
+      Breadcrumb
+    </BreadcrumbLink>
+  </BreadcrumbItem>
+</Breadcrumb>
+`,
+    },
+  },
+}
+
+const SeparatorsTemplate: Story<BreadcrumbProps> = (args) => {
   const { t } = useTranslation()
 
   return (
@@ -58,4 +93,34 @@ export const Separators = () => {
       </BreadcrumbItem>
     </Breadcrumb>
   )
+}
+
+export const Separators = SeparatorsTemplate.bind({})
+Separators.args = {}
+Separators.parameters = {
+  docs: {
+    source: {
+      code: `
+<Breadcrumb separator="-">
+  <BreadcrumbItem>
+    <BreadcrumbLink href="#">
+      Home
+    </BreadcrumbLink>
+  </BreadcrumbItem>
+
+  <BreadcrumbItem>
+    <BreadcrumbLink href="#">
+      About
+    </BreadcrumbLink>
+  </BreadcrumbItem>
+
+  <BreadcrumbItem isCurrentPage>
+    <BreadcrumbLink href="#">
+      Contact
+    </BreadcrumbLink>
+  </BreadcrumbItem>
+</Breadcrumb>
+`,
+    },
+  },
 }

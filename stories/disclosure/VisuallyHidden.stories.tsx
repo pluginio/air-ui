@@ -8,12 +8,24 @@ export default {
   title: "Disclosure/VisuallyHidden",
 } as Meta
 
-const Template: Story = (args) => (
+const UsageTemplate: Story = () => (
   <Button>
     <VisuallyHidden>Checkmark</VisuallyHidden>
     <BiCheck />
   </Button>
 )
 
-export const Usage = Template.bind({})
+export const Usage = UsageTemplate.bind({})
 Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Button>
+  <VisuallyHidden>Checkmark</VisuallyHidden>
+  <BiCheck />
+</Button>
+`,
+    },
+  },
+}

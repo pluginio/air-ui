@@ -56,9 +56,11 @@ const ThemeChanger = (context) => {
   }, [context.context.globals.theme, context])
 
   useEffect(() => {
-    let docsStoryDiv = document.getElementsByClassName("docs-story")[0];
-    if(docsStoryDiv) {
-      docsStoryDiv.style.background = isDark ? "#101923" : "#EDF2F7"
+    let docsStoryDivs = document.getElementsByClassName("docs-story");
+    if(docsStoryDivs.length > 0) {
+      docsStoryDivs.forEach(docStoryDiv => {
+        docStoryDiv.style.background = isDark ? "#101923" : "#EDF2F7"
+      });
     }
   }, [context.context.globals.theme])
 

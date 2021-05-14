@@ -1,5 +1,5 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
+import { Meta, Story } from "@storybook/react/types-6-0"
 import { Tooltip } from "../../src"
 import { useTranslation } from "react-i18next"
 
@@ -8,7 +8,7 @@ export default {
   title: "Overlay/Tooltip",
 } as Meta
 
-export const Usage = (args) => {
+const UsageTemplate: Story = () => {
   const { t } = useTranslation()
 
   return (
@@ -16,4 +16,17 @@ export const Usage = (args) => {
       {t("overlay_tooltip_text")}
     </Tooltip>
   )
+}
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Tooltip label="Hey, I'm here!" aria-label="A tooltip">
+  Hover me
+</Tooltip>
+`,
+    },
+  },
 }

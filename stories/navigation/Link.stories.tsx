@@ -1,6 +1,6 @@
 import React from "react"
-import { Meta } from "@storybook/react/types-6-0"
-import { Link } from "../../src"
+import { Meta, Story } from "@storybook/react/types-6-0"
+import { Link, LinkProps } from "../../src"
 import { useTranslation } from "react-i18next"
 
 export default {
@@ -8,8 +8,20 @@ export default {
   title: "Navigation/Link",
 } as Meta
 
-export const Usage = () => {
+const UsageTemplate: Story<LinkProps> = (args) => {
   const { t } = useTranslation()
 
-  return <Link>{t("navigation_link")}</Link>
+  return <Link {...args}>{t("navigation_link")}</Link>
+}
+
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<Link>default link</Link>
+`,
+    },
+  },
 }

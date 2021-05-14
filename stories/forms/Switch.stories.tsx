@@ -1,16 +1,38 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react/types-6-0'
-import { Switch, SwitchProps } from '../../src'
+import React from "react"
+import { Meta, Story } from "@storybook/react/types-6-0"
+import { Switch, SwitchProps, FormControl, FormLabel } from "../../src"
 
 export default {
   component: Switch,
-  title: 'Forms/Switch'
+  title: "Forms/Switch",
 } as Meta
 
-const Template: Story<SwitchProps> = (args) => <Switch {...args} />
+const UsageTemplate: Story<SwitchProps> = (args) => (
+  <FormControl display="flex" alignItems="center">
+    <FormLabel htmlFor="email-alerts" mb="0">
+      Enable email alerts?
+    </FormLabel>
+    <Switch {...args} />
+  </FormControl>
+)
 
-export const Usage = Template.bind({})
+export const Usage = UsageTemplate.bind({})
 Usage.args = {
-  colorScheme: 'primary',
-  ml: '2'
+  id: "email-alerts",
+  colorScheme: "primary",
+  ml: "2",
 } as SwitchProps
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<FormControl display="flex" alignItems="center">
+  <FormLabel htmlFor="email-alerts" mb="0">
+    Enable email alerts?
+  </FormLabel>
+  <Switch id="email-alerts"/>
+</FormControl>
+`,
+    },
+  },
+}

@@ -1,15 +1,15 @@
 import React from 'react'
-import { Meta } from '@storybook/react/types-6-0'
-import { PinInput, PinInputField , HStack} from '../../src'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { PinInput, PinInputField , HStack, PinInputProps} from '../../src'
 
 export default {
   component: PinInput,
   title: 'Forms/PinInput'
 } as Meta
 
-export const Usage = (args) => (
+const UsageTemplate: Story<PinInputProps> = (args) => (
   <HStack>
-    <PinInput>
+    <PinInput {...args}>
       <PinInputField />
       <PinInputField />
       <PinInputField />
@@ -17,3 +17,22 @@ export const Usage = (args) => (
     </PinInput>
   </HStack>
 )
+
+export const Usage = UsageTemplate.bind({})
+Usage.args = {}
+Usage.parameters = {
+  docs: {
+    source: {
+      code: `
+<HStack>
+  <PinInput>
+    <PinInputField />
+    <PinInputField />
+    <PinInputField />
+    <PinInputField />
+  </PinInput>
+</HStack>
+`,
+    },
+  },
+}

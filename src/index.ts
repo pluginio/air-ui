@@ -1,7 +1,7 @@
 //LAYOUT
 export { AspectRatio, AspectRatioProps } from './layout/aspect-ratio'
 export { Box, BoxProps } from './layout/box'
-export { Center, Square, Circle, SquareProps } from './layout/center'
+export { Center, Square, Circle, CenterProps, SquareProps } from './layout/center'
 export { Container, ContainerProps } from './layout/container'
 export { Flex, Spacer, FlexProps, SpacerProps } from './layout/flex'
 export { Grid, GridItem, GridProps, GridItemProps } from './layout/grid'
