@@ -11,6 +11,8 @@ import {
   TabPanelProps
 } from "@chakra-ui/react"
 
+export * from "./NavigatorTab"
+
 export {
   Tabs,
   TabList,

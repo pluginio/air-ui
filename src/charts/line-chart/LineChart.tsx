@@ -50,6 +50,7 @@ export const LineChart: React.FC<LineChartProps> = ({ categories, data }) => {
                 enabled: true,
                 symbol: "circle",
               },
+              lineWidth: 1
             },
           },
           series: data,

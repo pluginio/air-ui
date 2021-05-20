@@ -21,6 +21,7 @@ export default {
 const UsageTemplate: Story<InputGroupProps> = (args) => {
   const { t } = useTranslation()
   const theme = useTheme()
+  
   const handleSearch = () => {
     console.log("Handle search")
   }
@@ -37,10 +38,9 @@ const UsageTemplate: Story<InputGroupProps> = (args) => {
           icon={
             theme.direction === "ltr" ? <BiChevronRight /> : <BiChevronLeft />
           }
-          fontSize="20px"
+          fontSize="25px"
           w="48px"
           h="48px"
-          bgColor="primary.200"
           onClick={handleSearch}
         />
       </InputRightElement>

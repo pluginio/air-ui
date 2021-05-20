@@ -1,20 +1,29 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react/types-6-0'
-import { Alert, AlertProps, AlertIcon, AlertTitle, AlertDescription, CloseButton, useTheme } from '../../src'
+import React from "react"
+import { Meta, Story } from "@storybook/react/types-6-0"
+import {
+  Alert,
+  AlertProps,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  CloseButton,
+  useTheme,
+  Spacer,
+} from "../../src"
 import { useTranslation } from "react-i18next"
 
 export default {
   component: Alert,
-  subcomponents: {AlertIcon, AlertTitle, AlertDescription, CloseButton},
-  title: 'Feedback/Alert',
+  subcomponents: { AlertIcon, AlertTitle, AlertDescription, CloseButton },
+  title: "Feedback/Alert",
   argTypes: {
     status: {
-      options: ['error', 'success', 'warning', 'info'],
+      options: ["error", "success", "warning", "info"],
       control: {
-        type: 'select',
-      }
-    }
-  }
+        type: "select",
+      },
+    },
+  },
 } as Meta
 
 const Template: Story<AlertProps> = (args) => {
@@ -22,89 +31,93 @@ const Template: Story<AlertProps> = (args) => {
   const theme = useTheme()
 
   return (
-  <Alert {...args} >
-    <AlertIcon />
+    <Alert {...args}>
+      <AlertIcon />
       <AlertTitle mr={2}>{t("feedback_alert_title")}</AlertTitle>
       <AlertDescription>{t("feedback_alert_description")}</AlertDescription>
-      <CloseButton position='absolute' top='8px' left={theme.direction === "ltr" ? "unset" : "8px"}  right={theme.direction === "ltr" ? "8px" : "unset"} />
-  </Alert>
-)}
+      <Spacer />
+      <CloseButton />
+    </Alert>
+  )
+}
 
-export const Sandbox = Template.bind({});
+export const Sandbox = Template.bind({})
 
 Sandbox.parameters = {
-  docs: {disable: true
-  },
-};
+  docs: { disable: true },
+}
 
-export const Success = Template.bind({});
+export const Success = Template.bind({})
 Success.args = {
-  status: "success"
-} 
+  status: "success",
+}
 Success.parameters = {
   docs: {
     source: {
-      code:`
+      code: `
 <Alert status="success">
   <AlertIcon />
   <AlertTitle mr={2}>Title</AlertTitle>
   <AlertDescription>Description</AlertDescription>
-  <CloseButton position='absolute' top='8px' left={theme.direction === "ltr" ? "unset" : "8px"}  right={theme.direction === "ltr" ? "8px" : "unset"} />
+  <Spacer />
+  <CloseButton />
 </Alert>`,
     },
   },
-};
+}
 
-export const Error = Template.bind({});
+export const Error = Template.bind({})
 Error.args = {
-  status: "error"
-} 
+  status: "error",
+}
 Error.parameters = {
   docs: {
     source: {
-      code:`
+      code: `
 <Alert status="error">
   <AlertIcon />
   <AlertTitle mr={2}>Title</AlertTitle>
   <AlertDescription>Description</AlertDescription>
-  <CloseButton position='absolute' top='8px' left={theme.direction === "ltr" ? "unset" : "8px"}  right={theme.direction === "ltr" ? "8px" : "unset"} />
+  <Spacer />
+  <CloseButton />
 </Alert>`,
     },
   },
-};
+}
 
-export const Warning = Template.bind({});
+export const Warning = Template.bind({})
 Warning.args = {
-  status: "warning"
-} 
+  status: "warning",
+}
 Warning.parameters = {
   docs: {
     source: {
-      code:`
+      code: `
 <Alert status="warning">
   <AlertIcon />
   <AlertTitle mr={2}>Title</AlertTitle>
   <AlertDescription>Description</AlertDescription>
-  <CloseButton position='absolute' top='8px' left={theme.direction === "ltr" ? "unset" : "8px"}  right={theme.direction === "ltr" ? "8px" : "unset"} />
+  <Spacer />
+  <CloseButton />
 </Alert>`,
     },
   },
-};
+}
 
-export const Info = Template.bind({});
+export const Info = Template.bind({})
 Info.args = {
-  status: "info"
-} 
+  status: "info",
+}
 Info.parameters = {
   docs: {
     source: {
-      code:`
+      code: `
 <Alert status="info">
   <AlertIcon />
   <AlertTitle mr={2}>Title</AlertTitle>
   <AlertDescription>Description</AlertDescription>
-  <CloseButton position='absolute' top='8px' left={theme.direction === "ltr" ? "unset" : "8px"}  right={theme.direction === "ltr" ? "8px" : "unset"} />
+  <CloseButton />
 </Alert>`,
     },
   },
-};
+}

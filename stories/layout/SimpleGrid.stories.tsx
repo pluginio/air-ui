@@ -22,7 +22,7 @@ Usage.parameters = {
   docs: {
     source: {
       code: `
-<SimpleGrid columns={2} spacing={10} {...args}>
+<SimpleGrid columns={2} spacing={10}>
   <Box bg="primary.500" height="80px"></Box>
   <Box bg="primary.500" height="80px"></Box>
   <Box bg="primary.500" height="80px"></Box>

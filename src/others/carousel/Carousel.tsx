@@ -1,3 +1,4 @@
+import { HTMLChakraProps } from "@chakra-ui/react";
 import React, { useState } from "react";
 import SwiperCore, { A11y, Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,9 +11,11 @@ SwiperCore.use([A11y, Mousewheel]);
 
 export interface CarouselProps {
   pagination?: boolean
+  paddingLeft?: string | number
+  paddingRight?: string | number
 }
 
-const Carousel: React.FC<CarouselProps> = ({ children, pagination }) => {
+const Carousel: React.FC<CarouselProps> = ({ children, pagination, paddingLeft, paddingRight }) => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [activeIndex, setActiveIndex] = useState(0)
@@ -25,6 +28,8 @@ const Carousel: React.FC<CarouselProps> = ({ children, pagination }) => {
         mousewheel={{
           forceToAxis: true,
         }}
+        style={{paddingLeft, paddingRight}}
+        draggable={true}
         slidesPerView="auto"
         spaceBetween={16}
         onSwiper={(s: SwiperCore) => {
@@ -44,7 +49,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, pagination }) => {
         mt="2"
         justifyContent="center"
         alignItems="center"
-        bgColor={isDark ? "#22272C" : "#ECECEC"}
+        bgColor={isDark ? "#22272C" : "#E2E8F0"}
         borderRadius="10px"
         className="swiper-pagination"
         position="unset"

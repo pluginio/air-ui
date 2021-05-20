@@ -1,7 +1,7 @@
 const Link = {
-  baseStyle: {
-    color: "primary.200",
-  },
+  baseStyle: ({ colorScheme = "primary" }) => ({
+    color: `${colorScheme}.500`,
+  }),
 }
 
 export default Link

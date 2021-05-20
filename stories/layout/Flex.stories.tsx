@@ -26,7 +26,7 @@ Usage.parameters = {
   docs: {
     source: {
       code: `
-<Flex color="white" {...args}>
+<Flex color="white">
   <Center w="100px" bg="success.500">
     <Text>Box 1</Text>
   </Center>

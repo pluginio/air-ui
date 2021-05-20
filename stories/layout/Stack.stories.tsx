@@ -20,7 +20,7 @@ Usage.parameters = {
   docs: {
     source: {
       code: `
-<Stack direction={['column', 'row']} spacing='24px' {...args}>
+<Stack direction={['column', 'row']} spacing='24px'>
   <Box w='40px' h='40px' bg='warning.500'>1</Box>
   <Box w='40px' h='40px' bg='error.500'>2</Box>
   <Box w='40px' h='40px' bg='primary.500'>3</Box>
