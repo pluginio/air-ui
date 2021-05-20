@@ -566,6 +566,7 @@ const RatingsAndReviews = () => {
           flexDir="column"
           alignItems="center"
           justifyContent="space-between"
+          minW="94px"
         >
           <Flex flexDir="column" alignItems="center">
             <Text fontSize="4xl" lineHeight="none">
@@ -581,7 +582,7 @@ const RatingsAndReviews = () => {
               out of 5
             </Text>
           </Flex>
-          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>
+          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"} textAlign="center">
             470,302 ratings
           </Text>
         </Flex>
@@ -643,7 +644,7 @@ const AppInfo = () => {
         </Flex>
 
         <Flex flexDir="column" mt="10" w="150px">
-          <Heading fontSize="lg" as="h5" mb="3">
+          <Heading fontSize="lg" as="h5" mb="2">
             Links
           </Heading>
 
@@ -666,8 +667,7 @@ const AppInfo = () => {
           </Heading>
 
           <Image
-            w="72px"
-            h="89px"
+            w="60px"
             src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/pegi_3.png"
           />
 

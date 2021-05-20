@@ -23,6 +23,7 @@ import {
   useTheme,
   NavigatorTab,
   AspectRatio,
+  useBreakpointValue,
 } from "../../src"
 import { Usage as Search } from "../forms/Search.stories"
 import { MdApps } from "react-icons/md"
@@ -48,31 +49,20 @@ export default {
 
 export const Usage = () => {
   const { t } = useTranslation()
-  const theme = useTheme()
+  const carouselPaddding = useBreakpointValue({ base: "8px", md: "0px" })
 
   const handleSearch = () => {
     console.log("Handle search")
   }
 
-  const renderSlides = () => {
-    const elements = []
-
-    for (let index = 0; index < 8; index++) {
-      elements.push(
-        <CarouselSlide key={index} style={{ width: "auto" }}>
-          <AppCard />
-          <AppCard />
-        </CarouselSlide>,
-      )
-    }
-
-    return elements
-  }
-
   return (
     <Box p="2" maxW="740px" m="auto">
       <AspectRatio ratio={19 / 9} minH="180px" mb="4">
-        <Image src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo" borderRadius="10px" objectFit="cover" />
+        <Image
+          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+          borderRadius="10px"
+          objectFit="cover"
+        />
       </AspectRatio>
 
       <Search />
@@ -99,22 +89,50 @@ export const Usage = () => {
             <Heading as="h4" fontSize="xl" mt="8" mb="4" fontWeight="medium">
               {t("app_store_action")}
             </Heading>
-            <Carousel>{renderSlides()}</Carousel>
+            <Box marginX={{ base: "-8px", md: "0" }}>
+              <Carousel
+                paddingLeft={carouselPaddding}
+                paddingRight={carouselPaddding}
+              >
+                {renderSlides()}
+              </Carousel>
+            </Box>
 
             <Heading as="h4" fontSize="xl" mt="8" mb="4" fontWeight="medium">
               {t("app_store_adventure")}
             </Heading>
-            <Carousel>{renderSlides()}</Carousel>
+            <Box marginX={{ base: "-8px", md: "0" }}>
+              <Carousel
+                paddingLeft={carouselPaddding}
+                paddingRight={carouselPaddding}
+              >
+                {renderSlides()}
+              </Carousel>
+            </Box>
 
             <Heading as="h4" fontSize="xl" mt="8" mb="4" fontWeight="medium">
               {t("app_store_casual")}
             </Heading>
-            <Carousel>{renderSlides()}</Carousel>
+            <Box marginX={{ base: "-8px", md: "0" }}>
+              <Carousel
+                paddingLeft={carouselPaddding}
+                paddingRight={carouselPaddding}
+              >
+                {renderSlides()}
+              </Carousel>
+            </Box>
 
             <Heading as="h4" fontSize="xl" mt="8" mb="4" fontWeight="medium">
               {t("app_store_top_rated")}
             </Heading>
-            <Carousel>{renderSlides()}</Carousel>
+            <Box marginX={{ base: "-8px", md: "0" }}>
+              <Carousel
+                paddingLeft={carouselPaddding}
+                paddingRight={carouselPaddding}
+              >
+                {renderSlides()}
+              </Carousel>
+            </Box>
           </TabPanel>
 
           <TabPanel p="0">
@@ -132,4 +150,26 @@ export const Usage = () => {
       </Tabs>
     </Box>
   )
+}
+
+const renderSlides = () => {
+  const images = [
+    "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/cut_the_rope_icon.webp",
+    "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/cut_the_rope_2_icon.webp",
+    "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/king_of_thieves_icon.webp",
+    "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/om_nom_run_icon.webp",
+    "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/cut_the_rope_magic_icon.webp"
+  ]
+  const elements = []
+
+  for (let index = 0; index < 8; index++) {
+    elements.push(
+      <CarouselSlide key={index} style={{ width: "auto" }}>
+        <AppCard iconSrc={images[Math.floor(Math.random() * 5)]}/>
+        <AppCard iconSrc={images[Math.floor(Math.random() * 5)]}/>
+      </CarouselSlide>,
+    )
+  }
+
+  return elements
 }

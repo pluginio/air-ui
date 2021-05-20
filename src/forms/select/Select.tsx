@@ -18,7 +18,7 @@ export const Select: React.FC<SelectProps> = ({ children, ...rest }) => {
       size="lg"
       icon={
         <Icon
-          sx={{ width: "48px !important", height: "48px !important" }}
+          sx={{ width: "48px !important", height: "48px !important", color: "white !important" }}
           borderRadius="6px"
           padding="11.5px"
           bg="primary.500"
