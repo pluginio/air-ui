@@ -18,6 +18,7 @@ import {
   Avatar,
   Carousel,
   CarouselSlide,
+  useBreakpointValue,
 } from "../../src"
 import { MdStar, MdPlayArrow, MdFavorite, MdMoreVert } from "react-icons/md"
 import { IoHeartOutline } from "react-icons/io5"
@@ -187,6 +188,8 @@ const AppActions = () => {
 }
 
 const Screenshots = () => {
+  const carouselPaddding = useBreakpointValue({ base: "8px", md: "0px" })
+
   const Screenshot = (props: { src: string }) => {
     return (
       <Image w="200px" src={props.src} borderRadius="10px" objectFit="fill" />
@@ -195,7 +198,7 @@ const Screenshots = () => {
 
   return (
     <Box marginX={{ base: "-8px", md: "0" }}>
-      <Carousel paddingLeft="8px" paddingRight="8px">
+      <Carousel paddingLeft={carouselPaddding} paddingRight={carouselPaddding}>
         <CarouselSlide style={{ width: "auto" }}>
           <Screenshot src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/app_screenshot_1.webp" />
         </CarouselSlide>
@@ -250,11 +253,15 @@ const AboutApp = () => {
       mb="10"
       mt="4"
     >
-      <Collapse startingHeight={100} in={aboutShow}>
+      <Collapse startingHeight={95} in={aboutShow}>
         <Heading as="h4" fontSize="xl" fontWeight="normal">
           About this game
         </Heading>
-        <Text fontSize="sm" whiteSpace="pre-line" textColor={isDark ? "gray.400" : "gray.600"}>
+        <Text
+          fontSize="sm"
+          whiteSpace="pre-line"
+          textColor={isDark ? "gray.400" : "gray.600"}
+        >
           {`
               ABRACADABRA! After more than 960 million downloads, the Cut the Rope series returns with a magical new sequel: Cut the Rope: Magic!
     
@@ -328,7 +335,11 @@ const WhatsNew = () => {
         <Heading as="h4" fontSize="xl" fontWeight="normal">
           What's new?
         </Heading>
-        <Text fontSize="sm" whiteSpace="pre-line" textColor={isDark ? "gray.400" : "gray.600"}>
+        <Text
+          fontSize="sm"
+          whiteSpace="pre-line"
+          textColor={isDark ? "gray.400" : "gray.600"}
+        >
           {`
               1. new feature 1
               2. new feature 2
@@ -356,6 +367,8 @@ const WhatsNew = () => {
 }
 
 const MoreApps = () => {
+  const carouselPaddding = useBreakpointValue({ base: "8px", md: "0px" })
+
   const AppItem = (props: { src: string }) => {
     return (
       <Image
@@ -374,8 +387,11 @@ const MoreApps = () => {
         <Heading as="h4" fontSize="xl" ms="2" mb="4" fontWeight="normal">
           More by ZetoLab UK Limited
         </Heading>
-        <Box marginX="-8px">
-          <Carousel paddingLeft="8px" paddingRight="8px">
+        <Box marginX={{ base: "-8px", md: "0" }}>
+          <Carousel
+            paddingLeft={carouselPaddding}
+            paddingRight={carouselPaddding}
+          >
             <CarouselSlide style={{ width: "auto" }}>
               <AppItem src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/cut_the_rope_icon.webp" />
             </CarouselSlide>
@@ -425,8 +441,11 @@ const MoreApps = () => {
         <Heading as="h4" fontSize="xl" ms="2" mb="4" fontWeight="normal">
           You may also like
         </Heading>
-        <Box marginX="-8px">
-          <Carousel paddingLeft="8px" paddingRight="8px">
+        <Box marginX={{ base: "-8px", md: "0" }}>
+          <Carousel
+            paddingLeft={carouselPaddding}
+            paddingRight={carouselPaddding}
+          >
             <CarouselSlide style={{ width: "auto" }}>
               <AppItem src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/om_nom_run_icon.webp" />
             </CarouselSlide>
@@ -562,7 +581,9 @@ const RatingsAndReviews = () => {
               out of 5
             </Text>
           </Flex>
-          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>470,302 ratings</Text>
+          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>
+            470,302 ratings
+          </Text>
         </Flex>
         <RatingChart data={[315102, 79951, 32921, 9406, 32921]} />
       </Flex>
@@ -607,7 +628,12 @@ const AppInfo = () => {
           <Heading fontSize="lg" as="h5" mb="3">
             Developer
           </Heading>
-          <Text fontSize="sm" whiteSpace="pre-line" mb="4" textColor={isDark ? "gray.400" : "gray.600"}>
+          <Text
+            fontSize="sm"
+            whiteSpace="pre-line"
+            mb="4"
+            textColor={isDark ? "gray.400" : "gray.600"}
+          >
             {`ZeptoLab UK
             Limited2 Eaton Gate
             London
@@ -654,14 +680,18 @@ const AppInfo = () => {
           <Heading fontSize="lg" as="h5" mb="3">
             Digital items
           </Heading>
-          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>£0.74 - £78.49 per item</Text>
+          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>
+            £0.74 - £78.49 per item
+          </Text>
         </Flex>
 
         <Flex flexDir="column" mt="10" w="150px">
           <Heading fontSize="lg" as="h5" mb="3">
             Updated
           </Heading>
-          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>November 3, 2020</Text>
+          <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>
+            November 3, 2020
+          </Text>
         </Flex>
       </Flex>
 
