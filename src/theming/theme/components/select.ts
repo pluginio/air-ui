@@ -12,7 +12,7 @@ const Select = {
         border: 0
       },
       icon: {
-        right: 0
+        insetEnd: 0
       }
     }),
   }

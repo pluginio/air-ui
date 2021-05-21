@@ -12,7 +12,7 @@ const UsageTemplate: Story<BadgeProps> = (args) => {
   const { t } = useTranslation()
 
   return (
-    <Badge colorScheme="primary">
+    <Badge variant="solid">
       {t("data_display_badge_default")}
     </Badge>
   )
@@ -24,7 +24,7 @@ Usage.parameters = {
   docs: {
     source: {
       code:`
-<Badge colorScheme="primary">
+<Badge>
   default
 </Badge>`,
     },
@@ -36,7 +36,7 @@ const BadgeColorTemplate: Story<BadgeProps> = (args) => {
 
   return (
     <Stack direction="row">
-      <Badge colorScheme="primary">{t("data_display_badge_default")}</Badge>
+      <Badge>{t("data_display_badge_default")}</Badge>
       <Badge colorScheme="success">{t("data_display_badge_success")}</Badge>
       <Badge colorScheme="error">{t("data_display_badge_removed")}</Badge>
       <Badge colorScheme="info">{t("data_display_badge_new")}</Badge>
@@ -53,7 +53,7 @@ BadgeColor.parameters = {
     source: {
       code:`
 <Stack direction="row">
-  <Badge colorScheme="primary">default</Badge>
+  <Badge>default</Badge>
   <Badge colorScheme="success">success</Badge>
   <Badge colorScheme="error">removed</Badge>
   <Badge colorScheme="info">new</Badge>
@@ -67,7 +67,7 @@ const BadgeVariantsTemplate: Story<BadgeProps> = (args) => {
 
   return (
     <Stack direction="row">
-      <Badge colorScheme="primary">{t("data_display_badge_default")}</Badge>
+      <Badge>{t("data_display_badge_default")}</Badge>
       <Badge colorScheme="success">{t("data_display_badge_success")}</Badge>
       <Badge colorScheme="error">{t("data_display_badge_removed")}</Badge>
       <Badge colorScheme="info">{t("data_display_badge_new")}</Badge>

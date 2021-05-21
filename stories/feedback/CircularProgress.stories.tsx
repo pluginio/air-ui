@@ -19,12 +19,6 @@ export default {
         step: 1,
       },
     },
-    color: {
-      defaultValue: "#0078d4",
-      control: {
-        type: "color",
-      },
-    },
     size: {
       defaultValue: "48px",
       control: {
@@ -51,12 +45,14 @@ const UsageTemplate: Story<CircularProgressProps> = (args) => (
 )
 
 export const Usage = UsageTemplate.bind({})
-Usage.args = {}
+Usage.args = {
+  color: "primary.500"
+}
 Usage.parameters = {
   docs: {
     source: {
       code: `
-<CircularProgress value={40} />
+<CircularProgress value={40} color="primary.500"/>
 `,
     },
   },
@@ -71,12 +67,14 @@ const CircularProgressWithLabelTemplate: Story<CircularProgressProps> = (
 )
 
 export const CircularProgressWithLabel = CircularProgressWithLabelTemplate.bind({})
-CircularProgressWithLabel.args = {}
+CircularProgressWithLabel.args = {
+  color: "primary.500"
+}
 CircularProgressWithLabel.parameters = {
   docs: {
     source: {
       code: `
-<CircularProgress value={40}>
+<CircularProgress value={40} color="primary.500">
   <CircularProgressLabel>40%</CircularProgressLabel>
 </CircularProgress>
 `,

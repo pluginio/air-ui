@@ -1,9 +1,9 @@
-const FormError = {
+const Form = {
   baseStyle: (props) => ({
-    text: {
+    requiredIndicator: {
       color: "error.500",
     },
   }),
 }
 
-export default FormError
+export default Form

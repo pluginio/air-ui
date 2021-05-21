@@ -6,21 +6,14 @@ import {
   Heading,
   Text,
   Button,
-  Icon,
   TabList,
   TabPanel,
   TabPanels,
   Tabs,
-  IconButton,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  InputRightElement,
   Select,
   Carousel,
   CarouselSlide,
   Box,
-  useTheme,
   NavigatorTab,
   AspectRatio,
   useBreakpointValue,
@@ -29,12 +22,7 @@ import { Usage as Search } from "../forms/Search.stories"
 import { MdApps } from "react-icons/md"
 import { IoGameControllerOutline } from "react-icons/io5"
 import { IoMdFilm } from "react-icons/io"
-import {
-  BiSearch,
-  BiBookBookmark,
-  BiChevronLeft,
-  BiChevronRight,
-} from "react-icons/bi"
+import { BiBookBookmark } from "react-icons/bi"
 import { AppCard } from "./AppCard.stories"
 import { useTranslation } from "react-i18next"
 
@@ -50,11 +38,7 @@ export default {
 export const Usage = () => {
   const { t } = useTranslation()
   const carouselPaddding = useBreakpointValue({ base: "8px", md: "0px" })
-
-  const handleSearch = () => {
-    console.log("Handle search")
-  }
-
+  
   return (
     <Box p="2" maxW="740px" m="auto">
       <AspectRatio ratio={19 / 9} minH="180px" mb="4">

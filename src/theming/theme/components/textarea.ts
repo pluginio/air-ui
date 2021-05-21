@@ -3,12 +3,12 @@ const Textarea = {
     outline: (props) => ({
       field: {
         background: props.colorMode === "dark" ? "#22272C" : "gray.200",
-        border: 0
       }
     }),
   },
   defaultProps: {
-    errorBorderColor: "error.200",
+    focusBorderColor: "primary.500",
+    errorBorderColor: "error.500",
   },
 }
 

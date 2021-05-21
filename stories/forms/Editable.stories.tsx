@@ -57,24 +57,23 @@ const WithCustomControlsTemplate: Story<EditableProps> = (args) => {
     } = useEditableControls()
 
     return isEditing ? (
-      <ButtonGroup justifyContent="center" size="sm">
+      <ButtonGroup justifyContent="center"  mt="2">
         <IconButton
           aria-label="submit"
-          icon={<IoMdCheckmark />}
+          icon={<IoMdCheckmark size="1.25rem"/>}
           {...getSubmitButtonProps()}
         />
         <IconButton
           aria-label="cancel"
-          icon={<IoMdClose />}
+          icon={<IoMdClose size="1.25rem"/>}
           {...getCancelButtonProps()}
         />
       </ButtonGroup>
     ) : (
-      <Flex justifyContent="center">
+      <Flex justifyContent="center"  mt="2">
         <IconButton
           aria-label="edit"
-          size="sm"
-          icon={<BiEdit />}
+          icon={<BiEdit size="1.25rem"/>}
           {...getEditButtonProps()}
         />
       </Flex>

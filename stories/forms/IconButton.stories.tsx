@@ -27,8 +27,6 @@ const UsageTemplate: Story<IconButtonProps> = (args) => <IconButton {...args} />
 
 export const Usage = UsageTemplate.bind({})
 Usage.args = {
-  variant: "solid",
-  colorScheme: "primary",
   isRound: true,
   "aria-label": "Search",
   icon: <BiSearch size="1.25rem" />,

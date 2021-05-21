@@ -9,12 +9,12 @@ const Button = {
       size: "xs",
       textTransform: "uppercase",
       px: "4",
-      bg: "primary.200",
+      bg: `${props.colorScheme}.500`,
       color: "#FFFFFF"
     }),
     solid: (props) => ({
-      color: "#FFFFFF",
-    }),
+      color: "#FFFFFF"
+    })
   },
 }
 

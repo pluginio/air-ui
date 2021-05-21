@@ -1,7 +1,6 @@
 const Alert = {
   defaultProps: {
-    variant: "solid",
-    colorScheme: "primary"
+    variant: "solid"
   },
   baseStyle: (props) => ({
     container: {

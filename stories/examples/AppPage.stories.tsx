@@ -21,8 +21,8 @@ import {
   useBreakpointValue,
 } from "../../src"
 import { MdStar, MdPlayArrow, MdFavorite, MdMoreVert } from "react-icons/md"
-import { IoHeartOutline } from "react-icons/io5"
-import { BiChat, BiTrophy } from "react-icons/bi"
+import { BiChat, BiTrophy, BiHeart } from "react-icons/bi"
+import { useTranslation } from "react-i18next"
 
 export const AppPage = () => (
   <Box p="2" maxW="740px" m="auto">
@@ -52,6 +52,8 @@ const Header = () => {
 }
 
 const AppOverview = () => {
+  const { t } = useTranslation()
+
   return (
     <Flex lineHeight="none" h="114px" mb="4" w="full">
       <Image
@@ -77,7 +79,7 @@ const AppOverview = () => {
               fontWeight="normal"
               me="2"
             >
-              Cut the Rope: Magic
+              {t("app_page_overview_title")}
             </Heading>
             <Image
               width="20px"
@@ -88,7 +90,7 @@ const AppOverview = () => {
             />
           </Flex>
           <Link noOfLines={1} fontSize="md" pt="1" pb="2">
-            ZetoLab UK Limited
+            {t("app_page_overview_publisher")}
           </Link>
           <Flex>
             <Flex alignItems="center" me="5">
@@ -106,8 +108,8 @@ const AppOverview = () => {
           </Flex>
         </Flex>
         <Flex alignItems="center" justifyContent="space-between">
-          <Button variant="pill" size="xs" fontSize="sm" me="4" mb="1">
-            OPEN
+          <Button variant="pill" size="xs" fontSize="sm" me="4" mb="1" px="5">
+            {t("app_page_overview_button_open")}
           </Button>
         </Flex>
       </Flex>
@@ -116,6 +118,7 @@ const AppOverview = () => {
 }
 
 const AppActions = () => {
+  const { t } = useTranslation()
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
@@ -136,10 +139,10 @@ const AppActions = () => {
           colorScheme="primary"
           isRound
           aria-label="favorite"
-          icon={<IoHeartOutline size="1.5rem" />}
+          icon={<BiHeart size="1.5rem" />}
           mb="1"
         />
-        <Text fontSize="sm">Favorite</Text>
+        <Text fontSize="sm">{t("app_page_actions_favorite")}</Text>
       </Flex>
 
       <Flex flexDir="column" alignItems="center">
@@ -153,7 +156,7 @@ const AppActions = () => {
           icon={<BiChat size="1.5rem" />}
           mb="1"
         />
-        <Text fontSize="sm">Invite</Text>
+        <Text fontSize="sm">{t("app_page_actions_invite")}</Text>
       </Flex>
 
       <Flex flexDir="column" alignItems="center">
@@ -167,7 +170,7 @@ const AppActions = () => {
           icon={<BiTrophy size="1.5rem" />}
           mb="1"
         />
-        <Text fontSize="sm">Rank</Text>
+        <Text fontSize="sm">{t("app_page_actions_rank")}</Text>
       </Flex>
 
       <Flex flexDir="column" alignItems="center">
@@ -181,7 +184,7 @@ const AppActions = () => {
           icon={<MdMoreVert size="1.5rem" />}
           mb="1"
         />
-        <Text fontSize="sm">More</Text>
+        <Text fontSize="sm">{t("app_page_actions_more")}</Text>
       </Flex>
     </Flex>
   )
@@ -236,6 +239,7 @@ const Screenshots = () => {
 }
 
 const AboutApp = () => {
+  const { t } = useTranslation()
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
@@ -255,36 +259,14 @@ const AboutApp = () => {
     >
       <Collapse startingHeight={95} in={aboutShow}>
         <Heading as="h4" fontSize="xl" fontWeight="normal">
-          About this game
+          {t("app_page_about_title")}
         </Heading>
         <Text
           fontSize="sm"
           whiteSpace="pre-line"
           textColor={isDark ? "gray.400" : "gray.600"}
         >
-          {`
-              ABRACADABRA! After more than 960 million downloads, the Cut the Rope series returns with a magical new sequel: Cut the Rope: Magic!
-    
-              Join Om Nom’s newest adventure and transform him into magical forms to help the lovable little monster recover candy stolen by an evil wizard!
-      
-              EXCITING NEW FEATURES
-              - A magical world with completely new graphics, sound and gameplay elements
-              - 6 ways to transform Om Nom into magical creatures along his journey
-              - Complex boss levels that will challenge your candy-crunching, rope-cutting skills
-              - 160+ all-new puzzles, with more coming soon!
-          
-              A magical mishap has accidentally teleported Om Nom to a mystical world filled with challenging puzzles for players of all ages. Can you use Om Nom’s new skills to solve an evil wizard’s tricks and traps? The latest installment of this globally popular entertainment franchise puts a fresh spin on Cut the Rope’s iconic physics-puzzle gameplay, introducing more than 160 all-new magic-themed levels across a richly imagined, colorful world.
-
-              MAGICALLY TRANSFORM OM NOM INTO NEW FORMS
-              - The Bird Form helps Om Nom fly up above obstacles and potential traps
-              - The Baby Form allows Om Nom to squeeze into small, restricted spaces
-              - The Fish Form can help Om Nom dive deep to snatch up all the delicious candy
-              - The Mouse Form gives Om Nom a heightened sense of smell to help him sniff out the sweets he craves
-              - The Spirit Form ensures that nothing gets in Om Nom’s way during his magical journey
-              - The Dragon Form summons a powerful sneeze that sends everything flying
-
-              THAT’S NOT ALL -- Additional levels and transformations coming soon!
-            `}
+          {t("app_page_about_description")}
         </Text>
       </Collapse>
       <Button
@@ -297,24 +279,27 @@ const AboutApp = () => {
         mb="-4px"
         fontWeight="normal"
       >
-        {aboutShow ? "Less" : "More"}
+        {aboutShow ? t("app_page_about_less") : t("app_page_about_more")}
       </Button>
     </Flex>
   )
 }
 
 const RateApp = () => {
+  const { t } = useTranslation()
+
   return (
     <Flex flexDir="column" justifyContent="center" alignItems="center" mb="10">
       <RatingBar value={90} />
       <Button variant="link" fontSize="sm" fontWeight="normal">
-        Rate this game
+        {t("app_page_rate_app")}
       </Button>
     </Flex>
   )
 }
 
 const WhatsNew = () => {
+  const { t } = useTranslation()
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
@@ -333,21 +318,14 @@ const WhatsNew = () => {
     >
       <Collapse startingHeight={95} in={whatsNewShow}>
         <Heading as="h4" fontSize="xl" fontWeight="normal">
-          What's new?
+          {t("app_page_whats_new_title")}
         </Heading>
         <Text
           fontSize="sm"
           whiteSpace="pre-line"
           textColor={isDark ? "gray.400" : "gray.600"}
         >
-          {`
-              1. new feature 1
-              2. new feature 2
-              3. new feature 3
-              4. bug fix 1
-              5. bug fix 2
-              6. bug fix 3
-            `}
+          {t("app_page_whats_new_description")}
         </Text>
       </Collapse>
       <Button
@@ -360,13 +338,14 @@ const WhatsNew = () => {
         mb="-4px"
         fontWeight="normal"
       >
-        {whatsNewShow ? "Less" : "More"}
+        {whatsNewShow ? t("app_page_whats_new_less") : t("app_page_whats_new_more")}
       </Button>
     </Flex>
   )
 }
 
 const MoreApps = () => {
+  const { t } = useTranslation()
   const carouselPaddding = useBreakpointValue({ base: "8px", md: "0px" })
 
   const AppItem = (props: { src: string }) => {
@@ -385,7 +364,7 @@ const MoreApps = () => {
     <Flex flexDir="column" my="10">
       <Flex flexDir="column" mb="8">
         <Heading as="h4" fontSize="xl" ms="2" mb="4" fontWeight="normal">
-          More by ZetoLab UK Limited
+          {t("app_page_more_apps_publisher")}
         </Heading>
         <Box marginX={{ base: "-8px", md: "0" }}>
           <Carousel
@@ -433,13 +412,13 @@ const MoreApps = () => {
           p="2"
           fontWeight="normal"
         >
-          See all
+          {t("app_page_more_apps_see_all")}
         </Button>
       </Flex>
 
       <Flex flexDir="column">
         <Heading as="h4" fontSize="xl" ms="2" mb="4" fontWeight="normal">
-          You may also like
+          {t("app_page_more_apps_may_also_like")}
         </Heading>
         <Box marginX={{ base: "-8px", md: "0" }}>
           <Carousel
@@ -487,7 +466,7 @@ const MoreApps = () => {
           p="2"
           fontWeight="normal"
         >
-          See all
+          {t("app_page_more_apps_see_all")}
         </Button>
       </Flex>
     </Flex>
@@ -533,7 +512,7 @@ const Review: React.FC<ReviewProps> = ({
               isRound
               aria-label="options"
               icon={<MdMoreVert size="1.5rem" />}
-              mr="-14px"
+              me="-14px"
             />
           </Flex>
         </Flex>
@@ -546,6 +525,7 @@ const Review: React.FC<ReviewProps> = ({
 }
 
 const RatingsAndReviews = () => {
+  const { t } = useTranslation()
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
@@ -559,7 +539,7 @@ const RatingsAndReviews = () => {
       pb="2"
     >
       <Heading as="h4" fontSize="xl" mb="4" fontWeight="normal">
-        Ratings and reviews
+        {t("app_page_ratings_reviews_title")}
       </Heading>
       <Flex mb="6">
         <Flex
@@ -570,7 +550,7 @@ const RatingsAndReviews = () => {
         >
           <Flex flexDir="column" alignItems="center">
             <Text fontSize="4xl" lineHeight="none">
-              4.5
+              {t("app_page_ratings_reviews_rating")}
             </Text>
             <Text
               fontSize="lg"
@@ -579,11 +559,11 @@ const RatingsAndReviews = () => {
               mt="0.5"
               mb="2.5"
             >
-              out of 5
+              {t("app_page_ratings_reviews_out_of_five")}
             </Text>
           </Flex>
           <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"} textAlign="center">
-            470,302 ratings
+            {t("app_page_ratings_reviews_total_ratings")}
           </Text>
         </Flex>
         <RatingChart data={[315102, 79951, 32921, 9406, 32921]} />
@@ -591,7 +571,7 @@ const RatingsAndReviews = () => {
 
       <Review
         profileImage="https://avatars.githubusercontent.com/u/1716106"
-        timeStamp="4 mins ago"
+        timeStamp={t("app_page_review_timestamp_1")}
         rating={100}
         username="@gary"
         review="This is my favorite game. I keep coming back to it time and time again and this is why I'm rating it 5 stars."
@@ -599,7 +579,7 @@ const RatingsAndReviews = () => {
 
       <Review
         profileImage="https://avatars.githubusercontent.com/u/23258994"
-        timeStamp="2 weeks ago"
+        timeStamp={t("app_page_review_timestamp_2")}
         rating={100}
         username="@jack"
         review="This game is amazing! Addictive fun. Beautiful graphics. Simple gameplay. Would recommend."
@@ -610,15 +590,18 @@ const RatingsAndReviews = () => {
         fontSize="sm"
         alignSelf="flex-end"
         p="2"
+        me="-8px"
+        mb="-4px"
         fontWeight="normal"
       >
-        See all
+        {t("app_page_ratings_reviews_see_all")}
       </Button>
     </Flex>
   )
 }
 
 const AppInfo = () => {
+  const { t } = useTranslation()
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
@@ -627,7 +610,7 @@ const AppInfo = () => {
       <Flex flexWrap="wrap" mb="4" p="2">
         <Flex flexDir="column" mt="10" w="150px">
           <Heading fontSize="lg" as="h5" mb="3">
-            Developer
+            {t("app_page_info_developer")}
           </Heading>
           <Text
             fontSize="sm"
@@ -645,11 +628,11 @@ const AppInfo = () => {
 
         <Flex flexDir="column" mt="10" w="150px">
           <Heading fontSize="lg" as="h5" mb="2">
-            Links
+            {t("app_page_info_links")}
           </Heading>
 
           <Link fontSize="sm" py="1">
-            Visit website
+          {t("app_page_info_links_visit_website")}
           </Link>
 
           <Link fontSize="sm" py="1">
@@ -657,13 +640,13 @@ const AppInfo = () => {
           </Link>
 
           <Link fontSize="sm" py="1">
-            Privacy policy
+            {t("app_page_info_links_privacy_policy")}
           </Link>
         </Flex>
 
         <Flex flexDir="column" mt="10" w="150px">
           <Heading fontSize="lg" as="h5" mb="3">
-            Content rating
+            {t("app_page_info_content_rating")}
           </Heading>
 
           <Image
@@ -672,31 +655,31 @@ const AppInfo = () => {
           />
 
           <Link fontSize="sm" py="1">
-            Learn more
+            {t("app_page_info_content_rating_learn_more")}
           </Link>
         </Flex>
 
         <Flex flexDir="column" mt="10" w="150px">
           <Heading fontSize="lg" as="h5" mb="3">
-            Digital items
+            {t("app_page_info_digital_items")}
           </Heading>
           <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>
-            £0.74 - £78.49 per item
+            {t("app_page_info_digital_items_description")}
           </Text>
         </Flex>
 
         <Flex flexDir="column" mt="10" w="150px">
           <Heading fontSize="lg" as="h5" mb="3">
-            Updated
+            {t("app_page_info_updated")}
           </Heading>
           <Text fontSize="sm" textColor={isDark ? "gray.400" : "gray.600"}>
-            November 3, 2020
+            {t("app_page_info_updated_date")}
           </Text>
         </Flex>
       </Flex>
 
       <Link colorScheme="warning" fontSize="sm" alignSelf="flex-end" p="2">
-        Report this application
+        {t("app_page_info_report_app")}
       </Link>
     </Flex>
   )
