@@ -16,7 +16,7 @@ const Tabs = {
         overflowX: "auto",
         overflowY: "hidden",
         borderRadius: "10px",
-        bgColor: props.colorMode === "dark" ? "#22272C" : "gray.200",
+        bgColor: props.colorMode === "dark" ? "#22272C" : "gray.100",
         h: "100px",
         justifyContent: "space-between",
         '&::-webkit-scrollbar': {

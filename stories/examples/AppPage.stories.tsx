@@ -124,7 +124,7 @@ const AppActions = () => {
 
   return (
     <Flex
-      bgColor={isDark ? "#22272C" : "gray.200"}
+      bgColor={isDark ? "#22272C" : "gray.100"}
       borderRadius="10px"
       h="100px"
       justifyContent="space-evenly"
@@ -249,7 +249,7 @@ const AboutApp = () => {
   return (
     <Flex
       flexDir="column"
-      bgColor={isDark ? "#22272C" : "gray.200"}
+      bgColor={isDark ? "#22272C" : "gray.100"}
       borderRadius="10px"
       px="4"
       pt="4"
@@ -309,7 +309,7 @@ const WhatsNew = () => {
   return (
     <Flex
       flexDir="column"
-      bgColor={isDark ? "#22272C" : "gray.200"}
+      bgColor={isDark ? "#22272C" : "gray.100"}
       borderRadius="10px"
       px="4"
       pt="4"
@@ -532,7 +532,7 @@ const RatingsAndReviews = () => {
   return (
     <Flex
       flexDir="column"
-      bgColor={isDark ? "#22272C" : "gray.200"}
+      bgColor={isDark ? "#22272C" : "gray.100"}
       borderRadius="10px"
       px="4"
       pt="4"
