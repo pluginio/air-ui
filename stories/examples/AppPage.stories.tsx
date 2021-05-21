@@ -618,8 +618,8 @@ const AppInfo = () => {
             mb="4"
             textColor={isDark ? "gray.400" : "gray.600"}
           >
-            {`ZeptoLab UK
-            Limited2 Eaton Gate
+            {`ZeptoLab
+            2 Eaton Gate
             London
             SW1W 9BJ
             United Kingdom`}
