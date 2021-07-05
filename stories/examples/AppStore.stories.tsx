@@ -75,6 +75,7 @@ export const Usage = () => {
             </Heading>
             <Box marginX={{ base: "-8px", md: "0" }}>
               <Carousel
+                spaceBetween={16}
                 paddingLeft={carouselPaddding}
                 paddingRight={carouselPaddding}
               >
@@ -87,6 +88,7 @@ export const Usage = () => {
             </Heading>
             <Box marginX={{ base: "-8px", md: "0" }}>
               <Carousel
+                spaceBetween={16}
                 paddingLeft={carouselPaddding}
                 paddingRight={carouselPaddding}
               >
@@ -99,6 +101,7 @@ export const Usage = () => {
             </Heading>
             <Box marginX={{ base: "-8px", md: "0" }}>
               <Carousel
+                spaceBetween={16}
                 paddingLeft={carouselPaddding}
                 paddingRight={carouselPaddding}
               >
@@ -111,6 +114,7 @@ export const Usage = () => {
             </Heading>
             <Box marginX={{ base: "-8px", md: "0" }}>
               <Carousel
+                spaceBetween={16}
                 paddingLeft={carouselPaddding}
                 paddingRight={carouselPaddding}
               >

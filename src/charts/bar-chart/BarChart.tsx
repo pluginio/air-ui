@@ -13,16 +13,16 @@ export interface BarChartProps {
   categories?: string[]
   data?: (number | [string | number, number] | Highcharts.PointOptionsObject)[]
   color?: string | Highcharts.GradientColorObject | Highcharts.PatternObject
+  height?: string | number
 }
 
-export const BarChart: React.FC<BarChartProps> = ({ name, categories, data, color }) => {
+export const BarChart: React.FC<BarChartProps> = ({ name, categories, data, color, height }) => {
   const { colorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
   return (
     <HighchartsReact
       highcharts={Highcharts}
-      style={{ width: '100%' }}
       options={
         {
           title: { text: '' },
@@ -35,7 +35,8 @@ export const BarChart: React.FC<BarChartProps> = ({ name, categories, data, colo
           chart: {
             type: 'column',
             animation: true,
-            backgroundColor: 'transparent'
+            backgroundColor: 'transparent',
+            height: height
           },
           plotOptions: {
             column: {
@@ -50,6 +51,8 @@ export const BarChart: React.FC<BarChartProps> = ({ name, categories, data, colo
             }
           ],
           xAxis: {
+            startOnTick: false,
+            endOnTick: false,
             categories: categories,
             labels: {
               style: {

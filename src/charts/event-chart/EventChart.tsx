@@ -7,9 +7,14 @@ if (typeof Highcharts === 'object') {
   highchartsAccessibility(Highcharts)
 }
 
+export interface EventChartData {
+  name: string
+  data: number
+}
+
 export interface EventChartProps {
   name?: string
-  data?: (number | [string | number, number] | Highcharts.PointOptionsObject)[]
+  data?: EventChartData[]
   color?: string | Highcharts.GradientColorObject | Highcharts.PatternObject
 }
 
@@ -17,7 +22,6 @@ export const EventChart: React.FC<EventChartProps> = ({ name, data, color }) => 
   return (
     <HighchartsReact
       highcharts={Highcharts}
-      style={{ width: '100%' }}
       options={
         {
           title: {
@@ -47,13 +51,14 @@ export const EventChart: React.FC<EventChartProps> = ({ name, data, color }) => 
           },
           series: [
             {
-              type: 'spline',
+              type: 'line',
               name: name,
-              data: data,
+              data: data.map(item => (item.data)),
               color: color
             }
           ],
           xAxis: {
+            categories: data.map(item => (item.name)),
             lineWidth: 1,
             tickWidth: 0,
             labels: {
@@ -63,6 +68,7 @@ export const EventChart: React.FC<EventChartProps> = ({ name, data, color }) => 
           yAxis: {
             allowDecimals: false,
             startOnTick: false,
+            endOnTick: false,
             gridLineWidth: 0,
             labels: { enabled: false }
           },

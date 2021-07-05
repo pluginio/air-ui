@@ -8,7 +8,8 @@ const Select = {
   variants: {
     outline: (props) => ({
       field: {
-        background: props.colorMode === "dark" ? "#22272C" : "gray.100"
+        background: props.colorMode === "dark" ? "#22272C" : "gray.100",
+        border: 0
       },
       icon: {
         insetEnd: 0

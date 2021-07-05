@@ -1,9 +1,8 @@
 const Textarea = {
   variants: {
     outline: (props) => ({
-      field: {
         background: props.colorMode === "dark" ? "#22272C" : "gray.100",
-      }
+        border: 0
     }),
   },
   defaultProps: {

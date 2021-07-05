@@ -17,16 +17,16 @@ interface SeriesData {
 export interface LineChartProps {
   categories?: string[]
   data?: SeriesData[]
+  height?: string | number
 }
 
-export const LineChart: React.FC<LineChartProps> = ({ categories, data }) => {
+export const LineChart: React.FC<LineChartProps> = ({ categories, data, height }) => {
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
   return (
     <HighchartsReact
       highcharts={Highcharts}
-      style={{ width: "100%" }}
       options={
         {
           title: { text: "" },
@@ -40,6 +40,7 @@ export const LineChart: React.FC<LineChartProps> = ({ categories, data }) => {
             type: "spline",
             animation: true,
             backgroundColor: "transparent",
+            height: height
           },
           plotOptions: {
             column: {
@@ -55,8 +56,8 @@ export const LineChart: React.FC<LineChartProps> = ({ categories, data }) => {
           },
           series: data,
           xAxis: {
-            startOnTick: true,
-            endOnTick: true,
+            startOnTick: false,
+            endOnTick: false,
             categories: categories,
             labels: {
               style: {

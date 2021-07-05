@@ -201,7 +201,7 @@ const Screenshots = () => {
 
   return (
     <Box marginX={{ base: "-8px", md: "0" }}>
-      <Carousel paddingLeft={carouselPaddding} paddingRight={carouselPaddding}>
+      <Carousel spaceBetween={16} paddingLeft={carouselPaddding} paddingRight={carouselPaddding}>
         <CarouselSlide style={{ width: "auto" }}>
           <Screenshot src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/app_screenshot_1.webp" />
         </CarouselSlide>
@@ -368,6 +368,7 @@ const MoreApps = () => {
         </Heading>
         <Box marginX={{ base: "-8px", md: "0" }}>
           <Carousel
+            spaceBetween={16}
             paddingLeft={carouselPaddding}
             paddingRight={carouselPaddding}
           >
@@ -422,6 +423,7 @@ const MoreApps = () => {
         </Heading>
         <Box marginX={{ base: "-8px", md: "0" }}>
           <Carousel
+            spaceBetween={16}
             paddingLeft={carouselPaddding}
             paddingRight={carouselPaddding}
           >

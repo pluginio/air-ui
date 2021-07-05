@@ -5,7 +5,8 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogOverlay,
-  AlertDialogProps
+  AlertDialogProps,
+  AlertDialogCloseButton
  } from '@chakra-ui/react'
 
  export {
@@ -15,5 +16,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogOverlay,
-  AlertDialogProps
+  AlertDialogProps,
+  AlertDialogCloseButton
  }

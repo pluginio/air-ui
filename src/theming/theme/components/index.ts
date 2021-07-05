@@ -2,6 +2,7 @@ import Alert from './alert'
 import Badge from './badge'
 import Button from './button'
 import Checkbox from './checkbox'
+import CloseButton from './close-button'
 import FormError from './form-error'
 import Form from './form'
 import Input from './input'
@@ -13,6 +14,7 @@ import Radio from './radio'
 import RatingBar from './rating-bar'
 import Select from './select'
 import Slider from './slider'
+import Switch from './switch'
 import Tabs from './tabs'
 import Tag from './tag'
 import Textarea from './textarea'
@@ -22,6 +24,7 @@ export default {
   Badge,
   Button,
   Checkbox,
+  CloseButton,
   FormError,
   Form,
   Input,
@@ -33,6 +36,7 @@ export default {
   RatingBar,
   Select,
   Slider,
+  Switch,
   Tabs,
   Tag,
   Textarea
