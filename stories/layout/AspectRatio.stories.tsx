@@ -10,7 +10,7 @@ export default {
 const UsageTemplate: Story<AspectRatioProps> = (args) => (
   <AspectRatio {...args}>
     <Image
-      src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+      src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
       alt="banner example"
     />
   </AspectRatio>
@@ -26,7 +26,7 @@ Usage.parameters = {
       code: `
 <AspectRatio ratio={16 / 9}>
   <Image 
-    src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo" 
+    src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg" 
     alt="banner example"
   />
 </AspectRatio>

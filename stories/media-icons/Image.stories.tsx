@@ -11,7 +11,7 @@ const UsageTemplate: Story<ImageProps> = (args) => <Image {...args} />
 
 export const Usage = UsageTemplate.bind({})
 Usage.args = {
-  src: "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo",
+  src: "https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg",
   alt: "cut the rope",
 } as ImageProps
 Usage.parameters = {
@@ -19,7 +19,7 @@ Usage.parameters = {
     source: {
       code: `
 <Image
-  src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo",
+  src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg",
   alt="cut the rope"
 />
 `,

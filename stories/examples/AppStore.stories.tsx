@@ -43,7 +43,7 @@ export const Usage = () => {
     <Box p="2" maxW="740px" m="auto">
       <AspectRatio ratio={19 / 9} minH="180px" mb="4">
         <Image
-          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
           borderRadius="10px"
           objectFit="cover"
         />

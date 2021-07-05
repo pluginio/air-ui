@@ -21,25 +21,25 @@ export default {
 //       <Carousel pagination={pagination}>
 //         <CarouselSlide>
 //           <AspectRatio ratio={16 / 9}>
-//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo" borderRadius="20px" />
+//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg" borderRadius="20px" />
 //           </AspectRatio>
 //         </CarouselSlide>
 
 //         <CarouselSlide>
 //           <AspectRatio ratio={16 / 9}>
-//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo" borderRadius="20px" />
+//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg" borderRadius="20px" />
 //           </AspectRatio>
 //         </CarouselSlide>
 
 //         <CarouselSlide>
 //           <AspectRatio ratio={16 / 9}>
-//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo" borderRadius="20px" />
+//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg" borderRadius="20px" />
 //           </AspectRatio>
 //         </CarouselSlide>
 
 //         <CarouselSlide>
 //           <AspectRatio ratio={16 / 9}>
-//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo" borderRadius="20px" />
+//             <Image height="500px" src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg" borderRadius="20px" />
 //           </AspectRatio>
 //         </CarouselSlide>
 //       </Carousel>
@@ -49,12 +49,12 @@ export default {
 
 const UsageTemplate: Story<CarouselProps> = ({ pagination = true }) => (
   <Box maxW="680px" m="auto">
-    <Carousel pagination={pagination}>
+    <Carousel spaceBetween={16} pagination={pagination}>
       <CarouselSlide>
         <AspectRatio ratio={16 / 9}>
           <Image
             height="500px"
-            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
             borderRadius="20px"
           />
         </AspectRatio>
@@ -64,7 +64,7 @@ const UsageTemplate: Story<CarouselProps> = ({ pagination = true }) => (
         <AspectRatio ratio={16 / 9}>
           <Image
             height="500px"
-            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
             borderRadius="20px"
           />
         </AspectRatio>
@@ -74,7 +74,7 @@ const UsageTemplate: Story<CarouselProps> = ({ pagination = true }) => (
         <AspectRatio ratio={16 / 9}>
           <Image
             height="500px"
-            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
             borderRadius="20px"
           />
         </AspectRatio>
@@ -84,7 +84,7 @@ const UsageTemplate: Story<CarouselProps> = ({ pagination = true }) => (
         <AspectRatio ratio={16 / 9}>
           <Image
             height="500px"
-            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+            src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
             borderRadius="20px"
           />
         </AspectRatio>
@@ -104,7 +104,7 @@ Usage.parameters = {
       <AspectRatio ratio={16 / 9}>
         <Image
           height="500px"
-          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
           borderRadius="20px"
         />
       </AspectRatio>
@@ -114,7 +114,7 @@ Usage.parameters = {
       <AspectRatio ratio={16 / 9}>
         <Image
           height="500px"
-          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
           borderRadius="20px"
         />
       </AspectRatio>
@@ -124,7 +124,7 @@ Usage.parameters = {
       <AspectRatio ratio={16 / 9}>
         <Image
           height="500px"
-          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
           borderRadius="20px"
         />
       </AspectRatio>
@@ -134,7 +134,7 @@ Usage.parameters = {
       <AspectRatio ratio={16 / 9}>
         <Image
           height="500px"
-          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg?fbclid=IwAR0ZqTsSC1klaoEJTi3PIoqJpxAdmmvB6Eadm9frm6AehGjZURLsfkJffGo"
+          src="https://raw.githubusercontent.com/pluginio/static-content/main/lang/en/docs/v1/images/banner_example.jpg"
           borderRadius="20px"
         />
       </AspectRatio>
