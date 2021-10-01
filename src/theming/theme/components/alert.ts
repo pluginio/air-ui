@@ -1,13 +1,19 @@
 const Alert = {
   defaultProps: {
     variant: "solid",
-    colorScheme: "primary"
   },
   baseStyle: (props) => ({
     container: {
       borderRadius: "10px",
     },
   }),
+  variants: {
+    solid: (props) => ({
+      container: {
+        color: "white",
+      },
+    }),
+  },
 }
 
 export default Alert

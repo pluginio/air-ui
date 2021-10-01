@@ -4,6 +4,7 @@ import Button from './button'
 import Checkbox from './checkbox'
 import CloseButton from './close-button'
 import FormError from './form-error'
+import FormLabel from "./form-label"
 import Form from './form'
 import Input from './input'
 import Link from './link'
@@ -26,6 +27,7 @@ export default {
   Checkbox,
   CloseButton,
   FormError,
+  FormLabel,
   Form,
   Input,
   Link,

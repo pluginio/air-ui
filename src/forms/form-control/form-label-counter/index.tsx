@@ -1,4 +1,4 @@
-import { TextProps } from "@chakra-ui/react"
+import { TextProps, useColorMode } from "@chakra-ui/react"
 import React from "react"
 import { Text } from "../../../typography/text"
 
@@ -8,7 +8,10 @@ export interface FormLabelCounterProps extends TextProps {
 }
 
 export const FormLabelCounter: React.FC<FormLabelCounterProps> = ({ count, maxCount, ...rest }) => {
+  const { colorMode } = useColorMode()
+  const isDark = colorMode === 'dark'
+  
   return (
-    <Text {...rest} fontSize="md">{count}/{maxCount}</Text>
+    <Text {...rest} fontSize="sm" textColor={isDark ? "label.500" : "black"}>{count} / {maxCount}</Text>
   )
 }

@@ -1,7 +1,7 @@
 const Form = {
   baseStyle: (props) => ({
     requiredIndicator: {
-      color: "error.500",
+      color: "label.500",
     },
   }),
 }

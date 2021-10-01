@@ -1,21 +1,23 @@
 import React, { useState } from "react";
-import SwiperCore, { A11y, Mousewheel } from "swiper";
+import SwiperCore, { A11y, Autoplay, Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { AutoplayOptions } from "swiper/types/components/autoplay";
 import { Button } from "../../forms/button";
 import { Box } from "../../layout/box";
 import { Flex } from "../../layout/flex";
 import { useColorMode } from "../../theming/color-mode";
 
-SwiperCore.use([A11y, Mousewheel]);
+SwiperCore.use([A11y, Mousewheel, Autoplay]);
 
 export interface CarouselProps {
   pagination?: boolean
   paddingLeft?: string | number
   paddingRight?: string | number
   spaceBetween?: number
+  autoplay?: boolean | AutoplayOptions
 }
 
-const Carousel: React.FC<CarouselProps> = ({ children, pagination, paddingLeft, paddingRight, spaceBetween = 0 }) => {
+const Carousel: React.FC<CarouselProps> = ({ children, pagination, paddingLeft, paddingRight, spaceBetween = 0, autoplay = false}) => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [activeIndex, setActiveIndex] = useState(0)
@@ -41,6 +43,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, pagination, paddingLeft, 
         onSlideChange={(s: SwiperCore) => {
           setActiveIndex(s.activeIndex)
         }}
+        autoplay={autoplay}
       >
         {children}
       </Swiper>

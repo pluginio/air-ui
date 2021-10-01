@@ -3,5 +3,6 @@ import logo from '../stories/assets/logo.png'
 
 export default create({
   base: 'dark',
-  brandImage: logo
+  brandImage: logo,
+  brandTitle: 'AIR.UI',
 })
